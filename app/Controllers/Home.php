@@ -10,6 +10,6 @@ class Home extends BaseController
         $data = [ 
             'judul' => 'Homepage'
         ];
-        return view('template/v_header', $data).view('template/v_sidebar').view('template/v_topbar').view('home/index').view('template/v_footer');
+        return view('template/v_header', $data).view('template/v_sidebar').view('template/v_topbar').view('Home/index').view('template/v_footer');
     }
 }

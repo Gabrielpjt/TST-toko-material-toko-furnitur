@@ -1,0 +1,33 @@
+CRITICAL - 2023-12-13 06:01:31 --> Class "Codeigniter\Controller" not found
+in APPPATH\Controllers\PenilaianPerusahaan.php on line 8.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(309): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\GABRIEL PANJAITAN\\Downloads\\CodeIgniter4-develop\\TST-toko-material-toko-furnitur\\app\\Controllers\\PenilaianPerusahaan.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\PenilaianPerusahaan')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\PenilaianPerusahaan')
+ 5 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\PenilaianPerusahaan', true)
+ 6 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\GABRIEL PANJAITAN\\Downloads\\CodeIgniter4-develop\\TST-toko-material-toko-furnitur\\public\\index.php')
+CRITICAL - 2023-12-13 06:17:44 --> Class "App\Controllers\PenilaianPerusahaan\BaseControllers" not found
+in APPPATH\Controllers\PenilaianPerusahaan.php on line 8.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(309): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\GABRIEL PANJAITAN\\Downloads\\CodeIgniter4-develop\\TST-toko-material-toko-furnitur\\app\\Controllers\\PenilaianPerusahaan.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\PenilaianPerusahaan')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\PenilaianPerusahaan')
+ 5 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\PenilaianPerusahaan', true)
+ 6 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\GABRIEL PANJAITAN\\Downloads\\CodeIgniter4-develop\\TST-toko-material-toko-furnitur\\public\\index.php')
+CRITICAL - 2023-12-13 06:18:22 --> Class "App\Controllers\PenilaianPerusahaan\BaseController" not found
+in APPPATH\Controllers\PenilaianPerusahaan.php on line 8.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(309): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\GABRIEL PANJAITAN\\Downloads\\CodeIgniter4-develop\\TST-toko-material-toko-furnitur\\app\\Controllers\\PenilaianPerusahaan.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\PenilaianPerusahaan')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\PenilaianPerusahaan')
+ 5 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\PenilaianPerusahaan', true)
+ 6 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\GABRIEL PANJAITAN\\Downloads\\CodeIgniter4-develop\\TST-toko-material-toko-furnitur\\public\\index.php')
