@@ -1,0 +1,121 @@
+ERROR - 2023-12-12 12:25:34 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\CodeIgniter4-develop\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\CodeIgniter4-develop\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'tst_db', 3306, '', 0)
+#1 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\CodeIgniter4-develop\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\CodeIgniter4-develop\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\CodeIgniter4-develop\system\Database\BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\CodeIgniter4-develop\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\CodeIgniter4-develop\system\BaseModel.php(623): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\CodeIgniter4-develop\app\Models\Tst_db.php(11): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\CodeIgniter4-develop\app\Controllers\Tst_dbControllers.php(10): App\Models\Tst_db->getDataFoodmart()
+#8 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\CodeIgniter4-develop\system\CodeIgniter.php(942): App\Controllers\Tst_dbControllers->index()
+#9 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\CodeIgniter4-develop\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tst_dbControllers))
+#10 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\CodeIgniter4-develop\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\CodeIgniter4-develop\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\CodeIgniter4-develop\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\GABRIE...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\CodeIgniter4-develop\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\CodeIgniter4-develop\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\CodeIgniter4-develop\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\CodeIgniter4-develop\system\Database\BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\CodeIgniter4-develop\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\CodeIgniter4-develop\system\BaseModel.php(623): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\CodeIgniter4-develop\app\Models\Tst_db.php(11): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\CodeIgniter4-develop\app\Controllers\Tst_dbControllers.php(10): App\Models\Tst_db->getDataFoodmart()
+#7 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\CodeIgniter4-develop\system\CodeIgniter.php(942): App\Controllers\Tst_dbControllers->index()
+#8 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\CodeIgniter4-develop\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tst_dbControllers))
+#9 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\CodeIgniter4-develop\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\CodeIgniter4-develop\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\CodeIgniter4-develop\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\GABRIE...')
+#12 {main}
+CRITICAL - 2023-12-12 12:25:34 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `view_sales_fact_1997`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(623): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\Tst_db.php(11): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Tst_dbControllers.php(10): App\Models\Tst_db->getDataFoodmart()
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Tst_dbControllers->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Tst_dbControllers))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\GABRIEL PANJAITAN\\Downloads\\CodeIgniter4-develop\\CodeIgniter4-develop\\public\\index.php')
+CRITICAL - 2023-12-12 20:33:32 --> Invalid file: "template/v.sidebar"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('template/v.sidebar')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('template/v.sidebar', [], true)
+ 3 APPPATH\Controllers\Home.php(15): view('template/v.sidebar')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\GABRIEL PANJAITAN\\Downloads\\CodeIgniter4-develop\\CodeIgniter4-develop\\public\\index.php')
+CRITICAL - 2023-12-12 20:34:04 --> Invalid file: "template/v.sidebar"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('template/v.sidebar')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('template/v.sidebar', [], true)
+ 3 APPPATH\Controllers\Home.php(15): view('template/v.sidebar')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\GABRIEL PANJAITAN\\Downloads\\CodeIgniter4-develop\\CodeIgniter4-develop\\public\\index.php')
+CRITICAL - 2023-12-12 20:35:29 --> Invalid file: "template/v.sidebar"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('template/v.sidebar')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('template/v.sidebar', [], true)
+ 3 APPPATH\Controllers\Home.php(14): view('template/v.sidebar')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\GABRIEL PANJAITAN\\Downloads\\CodeIgniter4-develop\\CodeIgniter4-develop\\public\\index.php')
+CRITICAL - 2023-12-12 20:40:23 --> Invalid file: "template\v.sidebar"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('template\\v.sidebar')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('template\\v.sidebar', [], true)
+ 3 APPPATH\Controllers\Home.php(14): view('template\\v.sidebar')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\GABRIEL PANJAITAN\\Downloads\\CodeIgniter4-develop\\CodeIgniter4-develop\\public\\index.php')
+CRITICAL - 2023-12-12 20:42:18 --> Invalid file: "template\v.sidebar"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('template\\v.sidebar')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('template\\v.sidebar', [], true)
+ 3 APPPATH\Controllers\Home.php(13): view('template\\v.sidebar')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\GABRIEL PANJAITAN\\Downloads\\CodeIgniter4-develop\\CodeIgniter4-develop\\public\\index.php')
+CRITICAL - 2023-12-12 20:43:33 --> Invalid file: "template\v.sidebar"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('template\\v.sidebar')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('template\\v.sidebar', [], true)
+ 3 APPPATH\Controllers\Home.php(14): view('template\\v.sidebar')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\GABRIEL PANJAITAN\\Downloads\\CodeIgniter4-develop\\CodeIgniter4-develop\\public\\index.php')
+CRITICAL - 2023-12-12 20:45:16 --> App\Controllers\Home::index(): Return value must be of type string, none returned
+in APPPATH\Controllers\Home.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\GABRIEL PANJAITAN\\Downloads\\CodeIgniter4-develop\\CodeIgniter4-develop\\public\\index.php')
+CRITICAL - 2023-12-12 20:45:46 --> App\Controllers\Home::index(): Return value must be of type string, none returned
+in APPPATH\Controllers\Home.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\GABRIEL PANJAITAN\\Downloads\\CodeIgniter4-develop\\CodeIgniter4-develop\\public\\index.php')
