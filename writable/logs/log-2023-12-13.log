@@ -382,3 +382,226 @@ FROM `data_penilaian_kayu_dari_perusahaan`', [], false)
  9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
 10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
 11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\GABRIEL PANJAITAN\\Downloads\\CodeIgniter4-develop\\TST-toko-material-toko-furnitur\\public\\index.php')
+CRITICAL - 2023-12-13 21:44:04 --> Call to undefined function baseurl()
+in APPPATH\Views\template\v_sidebar.php on line 5.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('template/v_sidebar', [], true)
+ 4 APPPATH\Controllers\PenilaianPerusahaan.php(22): view('template/v_sidebar')
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PenilaianPerusahaan->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianPerusahaan))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\GABRIEL PANJAITAN\\Downloads\\CodeIgniter4-develop\\TST-toko-material-toko-furnitur\\public\\index.php')
+WARNING - 2023-12-13 22:36:20 --> [DEPRECATED] Creation of dynamic property App\Controllers\PenilaianPerusahaan::$model is deprecated in APPPATH\Controllers\PenilaianPerusahaan.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\PenilaianPerusahaan->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\GABRIEL PANJAITAN\\Downloads\\CodeIgniter4-develop\\TST-toko-material-toko-furnitur\\public\\index.php')
+CRITICAL - 2023-12-13 22:40:34 --> Unsupported operand types: array + string
+in APPPATH\Controllers\PenilaianPerusahaan.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PenilaianPerusahaan->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianPerusahaan))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\GABRIEL PANJAITAN\\Downloads\\CodeIgniter4-develop\\TST-toko-material-toko-furnitur\\public\\index.php')
+CRITICAL - 2023-12-13 22:40:49 --> Unsupported operand types: array + string
+in APPPATH\Controllers\PenilaianPerusahaan.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PenilaianPerusahaan->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianPerusahaan))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\GABRIEL PANJAITAN\\Downloads\\CodeIgniter4-develop\\TST-toko-material-toko-furnitur\\public\\index.php')
+ERROR - 2023-12-13 22:43:57 --> mysqli_sql_exception: Unknown column 'jenis_kayu' in 'field list' in C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `da...', 0)
+#1 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `da...')
+#2 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `da...')
+#3 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\BaseBuilder.php(2301): CodeIgniter\Database\BaseConnection->query('INSERT INTO `da...', Array, false)
+#4 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\app\Models\M_PenilaianPerusahaan.php(15): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\app\Controllers\PenilaianPerusahaan.php(46): App\Models\M_PenilaianPerusahaan->tambah(Array)
+#6 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\CodeIgniter.php(942): App\Controllers\PenilaianPerusahaan->tambah()
+#7 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianPerusahaan))
+#8 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\GABRIE...')
+#11 {main}
+CRITICAL - 2023-12-13 22:43:57 --> Unknown column 'jenis_kayu' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2301): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data_penilaian_kayu_dari_perusahaan` (`jenis_kayu`, `merek_kayu`, `tingkat_tekstur`, `tingkat_ketahanan`, `tingkat_keperawatan`, `harga`, `massa_jenis`, `tipe_finishing_warna`, `kelebihan`, `kekurangan`) VALUES (:jenis_kayu:, :merek_kayu:, :tingkat_tekstur:, :tingkat_ketahanan:, :tingkat_keperawatan:, :harga:, :massa_jenis:, :tipe_finishing_warna:, :kelebihan:, :kekurangan:)', [...], false)
+ 2 APPPATH\Models\M_PenilaianPerusahaan.php(15): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\PenilaianPerusahaan.php(46): App\Models\M_PenilaianPerusahaan->tambah([...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PenilaianPerusahaan->tambah()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianPerusahaan))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\GABRIEL PANJAITAN\\Downloads\\CodeIgniter4-develop\\TST-toko-material-toko-furnitur\\public\\index.php')
+ERROR - 2023-12-13 22:45:21 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`Kayu`, `Merek` `Kayu`, `Tingkat` `Tekstur`, `Tingkat` `Ketahanan`, `Tingkat`...' at line 1 in C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `da...', 0)
+#1 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `da...')
+#2 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `da...')
+#3 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\BaseBuilder.php(2301): CodeIgniter\Database\BaseConnection->query('INSERT INTO `da...', Array, false)
+#4 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\app\Models\M_PenilaianPerusahaan.php(15): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\app\Controllers\PenilaianPerusahaan.php(46): App\Models\M_PenilaianPerusahaan->tambah(Array)
+#6 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\CodeIgniter.php(942): App\Controllers\PenilaianPerusahaan->tambah()
+#7 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianPerusahaan))
+#8 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\GABRIE...')
+#11 {main}
+CRITICAL - 2023-12-13 22:45:21 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`Kayu`, `Merek` `Kayu`, `Tingkat` `Tekstur`, `Tingkat` `Ketahanan`, `Tingkat`...' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2301): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data_penilaian_kayu_dari_perusahaan` (`Jenis` `Kayu`, `Merek` `Kayu`, `Tingkat` `Tekstur`, `Tingkat` `Ketahanan`, `Tingkat` `Keperawatan`, `Harga`, `Massa` `Jenis`, `Tipe Finishing` `Warna`, `Kelebihan`, `Kekurangan`) VALUES (:Jenis Kayu:, :Merek Kayu:, :Tingkat Tekstur:, :Tingkat Ketahanan:, :Tingkat Keperawatan:, :Harga:, :Massa Jenis:, :Tipe Finishing Warna:, :Kelebihan:, :Kekurangan:)', [...], false)
+ 2 APPPATH\Models\M_PenilaianPerusahaan.php(15): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\PenilaianPerusahaan.php(46): App\Models\M_PenilaianPerusahaan->tambah([...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PenilaianPerusahaan->tambah()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianPerusahaan))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\GABRIEL PANJAITAN\\Downloads\\CodeIgniter4-develop\\TST-toko-material-toko-furnitur\\public\\index.php')
+ERROR - 2023-12-13 22:47:58 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`Kayu`, `Merek` `Kayu`, `Tingkat_Tekstur`, `Tingkat_Ketahanan`, `Tingkat_Kepe...' at line 1 in C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `da...', 0)
+#1 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `da...')
+#2 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `da...')
+#3 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\BaseBuilder.php(2301): CodeIgniter\Database\BaseConnection->query('INSERT INTO `da...', Array, false)
+#4 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\app\Models\M_PenilaianPerusahaan.php(15): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\app\Controllers\PenilaianPerusahaan.php(46): App\Models\M_PenilaianPerusahaan->tambah(Array)
+#6 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\CodeIgniter.php(942): App\Controllers\PenilaianPerusahaan->tambah()
+#7 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianPerusahaan))
+#8 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\GABRIE...')
+#11 {main}
+CRITICAL - 2023-12-13 22:47:58 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`Kayu`, `Merek` `Kayu`, `Tingkat_Tekstur`, `Tingkat_Ketahanan`, `Tingkat_Kepe...' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2301): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data_penilaian_kayu_dari_perusahaan` (`Jenis` `Kayu`, `Merek` `Kayu`, `Tingkat_Tekstur`, `Tingkat_Ketahanan`, `Tingkat_Keperawatan`, `Harga`, `Massa_Jenis`, `Tipe_Finishing_Warna`, `Kelebihan`, `Kekurangan`) VALUES (:Jenis Kayu:, :Merek Kayu:, :Tingkat_Tekstur:, :Tingkat_Ketahanan:, :Tingkat_Keperawatan:, :Harga:, :Massa_Jenis:, :Tipe_Finishing_Warna:, :Kelebihan:, :Kekurangan:)', [...], false)
+ 2 APPPATH\Models\M_PenilaianPerusahaan.php(15): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\PenilaianPerusahaan.php(46): App\Models\M_PenilaianPerusahaan->tambah([...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PenilaianPerusahaan->tambah()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianPerusahaan))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\GABRIEL PANJAITAN\\Downloads\\CodeIgniter4-develop\\TST-toko-material-toko-furnitur\\public\\index.php')
+ERROR - 2023-12-13 22:52:08 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`Kayu`, `Merek` `Kayu`, `Tingkat_Tekstur`, `Tingkat_Ketahanan`, `Tingkat_Kepe...' at line 1 in C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `da...', 0)
+#1 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `da...')
+#2 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `da...')
+#3 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\BaseBuilder.php(2301): CodeIgniter\Database\BaseConnection->query('INSERT INTO `da...', Array, false)
+#4 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\app\Models\M_PenilaianPerusahaan.php(15): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\app\Controllers\PenilaianPerusahaan.php(46): App\Models\M_PenilaianPerusahaan->tambah(Array)
+#6 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\CodeIgniter.php(942): App\Controllers\PenilaianPerusahaan->tambah()
+#7 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianPerusahaan))
+#8 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\GABRIE...')
+#11 {main}
+CRITICAL - 2023-12-13 22:52:08 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`Kayu`, `Merek` `Kayu`, `Tingkat_Tekstur`, `Tingkat_Ketahanan`, `Tingkat_Kepe...' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2301): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data_penilaian_kayu_dari_perusahaan` (`Jenis` `Kayu`, `Merek` `Kayu`, `Tingkat_Tekstur`, `Tingkat_Ketahanan`, `Tingkat_Keperawatan`, `Harga`, `Massa_Jenis`, `Tipe_Finishing_Warna`, `Kelebihan`, `Kekurangan`) VALUES (:Jenis Kayu:, :Merek Kayu:, :Tingkat_Tekstur:, :Tingkat_Ketahanan:, :Tingkat_Keperawatan:, :Harga:, :Massa_Jenis:, :Tipe_Finishing_Warna:, :Kelebihan:, :Kekurangan:)', [...], false)
+ 2 APPPATH\Models\M_PenilaianPerusahaan.php(15): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\PenilaianPerusahaan.php(46): App\Models\M_PenilaianPerusahaan->tambah([...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PenilaianPerusahaan->tambah()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianPerusahaan))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\GABRIEL PANJAITAN\\Downloads\\CodeIgniter4-develop\\TST-toko-material-toko-furnitur\\public\\index.php')
+ERROR - 2023-12-13 22:52:22 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`Kayu`, `Merek` `Kayu`, `Tingkat_Tekstur`, `Tingkat_Ketahanan`, `Tingkat_Kepe...' at line 1 in C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `da...', 0)
+#1 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `da...')
+#2 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `da...')
+#3 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\BaseBuilder.php(2301): CodeIgniter\Database\BaseConnection->query('INSERT INTO `da...', Array, false)
+#4 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\app\Models\M_PenilaianPerusahaan.php(15): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\app\Controllers\PenilaianPerusahaan.php(46): App\Models\M_PenilaianPerusahaan->tambah(Array)
+#6 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\CodeIgniter.php(942): App\Controllers\PenilaianPerusahaan->tambah()
+#7 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianPerusahaan))
+#8 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\GABRIE...')
+#11 {main}
+CRITICAL - 2023-12-13 22:52:22 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`Kayu`, `Merek` `Kayu`, `Tingkat_Tekstur`, `Tingkat_Ketahanan`, `Tingkat_Kepe...' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2301): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data_penilaian_kayu_dari_perusahaan` (`Jenis` `Kayu`, `Merek` `Kayu`, `Tingkat_Tekstur`, `Tingkat_Ketahanan`, `Tingkat_Keperawatan`, `Harga`, `Massa_Jenis`, `Tipe_Finishing_Warna`, `Kelebihan`, `Kekurangan`) VALUES (:Jenis Kayu:, :Merek Kayu:, :Tingkat_Tekstur:, :Tingkat_Ketahanan:, :Tingkat_Keperawatan:, :Harga:, :Massa_Jenis:, :Tipe_Finishing_Warna:, :Kelebihan:, :Kekurangan:)', [...], false)
+ 2 APPPATH\Models\M_PenilaianPerusahaan.php(15): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\PenilaianPerusahaan.php(46): App\Models\M_PenilaianPerusahaan->tambah([...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PenilaianPerusahaan->tambah()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianPerusahaan))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\GABRIEL PANJAITAN\\Downloads\\CodeIgniter4-develop\\TST-toko-material-toko-furnitur\\public\\index.php')
+ERROR - 2023-12-13 23:04:07 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`Kayu`, `Merek` `Kayu`, `Tingkat_Tekstur`, `Tingkat_Ketahanan`, `Tingkat_Kepe...' at line 1 in C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `da...', 0)
+#1 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `da...')
+#2 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `da...')
+#3 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\BaseBuilder.php(2301): CodeIgniter\Database\BaseConnection->query('INSERT INTO `da...', Array, false)
+#4 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\app\Models\M_PenilaianPerusahaan.php(15): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\app\Controllers\PenilaianPerusahaan.php(46): App\Models\M_PenilaianPerusahaan->tambah(Array)
+#6 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\CodeIgniter.php(942): App\Controllers\PenilaianPerusahaan->tambah()
+#7 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianPerusahaan))
+#8 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\GABRIE...')
+#11 {main}
+CRITICAL - 2023-12-13 23:04:07 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`Kayu`, `Merek` `Kayu`, `Tingkat_Tekstur`, `Tingkat_Ketahanan`, `Tingkat_Kepe...' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2301): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data_penilaian_kayu_dari_perusahaan` (`Jenis` `Kayu`, `Merek` `Kayu`, `Tingkat_Tekstur`, `Tingkat_Ketahanan`, `Tingkat_Keperawatan`, `Harga`, `Massa_Jenis`, `Tipe_Finishing_Warna`, `Kelebihan`, `Kekurangan`) VALUES (:Jenis Kayu:, :Merek Kayu:, :Tingkat_Tekstur:, :Tingkat_Ketahanan:, :Tingkat_Keperawatan:, :Harga:, :Massa_Jenis:, :Tipe_Finishing_Warna:, :Kelebihan:, :Kekurangan:)', [...], false)
+ 2 APPPATH\Models\M_PenilaianPerusahaan.php(15): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\PenilaianPerusahaan.php(46): App\Models\M_PenilaianPerusahaan->tambah([...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PenilaianPerusahaan->tambah()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianPerusahaan))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\GABRIEL PANJAITAN\\Downloads\\CodeIgniter4-develop\\TST-toko-material-toko-furnitur\\public\\index.php')
+ERROR - 2023-12-13 23:07:30 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`Kayu`, `Merek` `Kayu`, `Tingkat_Tekstur`, `Tingkat_Ketahanan`, `Tingkat_Kepe...' at line 1 in C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `da...', 0)
+#1 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `da...')
+#2 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `da...')
+#3 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\BaseBuilder.php(2301): CodeIgniter\Database\BaseConnection->query('INSERT INTO `da...', Array, false)
+#4 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\app\Models\M_PenilaianPerusahaan.php(15): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\app\Controllers\PenilaianPerusahaan.php(46): App\Models\M_PenilaianPerusahaan->tambah(Array)
+#6 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\CodeIgniter.php(942): App\Controllers\PenilaianPerusahaan->tambah()
+#7 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianPerusahaan))
+#8 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\GABRIE...')
+#11 {main}
+CRITICAL - 2023-12-13 23:07:30 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '`Kayu`, `Merek` `Kayu`, `Tingkat_Tekstur`, `Tingkat_Ketahanan`, `Tingkat_Kepe...' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2301): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data_penilaian_kayu_dari_perusahaan` (`Jenis` `Kayu`, `Merek` `Kayu`, `Tingkat_Tekstur`, `Tingkat_Ketahanan`, `Tingkat_Keperawatan`, `Harga`, `Massa_Jenis`, `Tipe_Finishing_Warna`, `Kelebihan`, `Kekurangan`) VALUES (:Jenis Kayu:, :Merek Kayu:, :Tingkat_Tekstur:, :Tingkat_Ketahanan:, :Tingkat_Keperawatan:, :Harga:, :Massa_Jenis:, :Tipe_Finishing_Warna:, :Kelebihan:, :Kekurangan:)', [...], false)
+ 2 APPPATH\Models\M_PenilaianPerusahaan.php(15): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\PenilaianPerusahaan.php(46): App\Models\M_PenilaianPerusahaan->tambah([...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PenilaianPerusahaan->tambah()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianPerusahaan))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\GABRIEL PANJAITAN\\Downloads\\CodeIgniter4-develop\\TST-toko-material-toko-furnitur\\public\\index.php')
+ERROR - 2023-12-13 23:12:01 --> mysqli_sql_exception: Column 'Jenis_Kayu' cannot be null in C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `da...', 0)
+#1 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `da...')
+#2 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `da...')
+#3 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\BaseBuilder.php(2301): CodeIgniter\Database\BaseConnection->query('INSERT INTO `da...', Array, false)
+#4 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\app\Models\M_PenilaianPerusahaan.php(15): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\app\Controllers\PenilaianPerusahaan.php(46): App\Models\M_PenilaianPerusahaan->tambah(Array)
+#6 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\CodeIgniter.php(942): App\Controllers\PenilaianPerusahaan->tambah()
+#7 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianPerusahaan))
+#8 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\GABRIE...')
+#11 {main}
+CRITICAL - 2023-12-13 23:12:01 --> Column 'Jenis_Kayu' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2301): CodeIgniter\Database\BaseConnection->query('INSERT INTO `data_penilaian_kayu_dari_perusahaan` (`Jenis_Kayu`, `Merek_Kayu`, `Tingkat_Tekstur`, `Tingkat_Ketahanan`, `Tingkat_Keperawatan`, `Harga`, `Massa_Jenis`, `Tipe_Finishing_Warna`, `Kelebihan`, `Kekurangan`) VALUES (:Jenis_Kayu:, :Merek_Kayu:, :Tingkat_Tekstur:, :Tingkat_Ketahanan:, :Tingkat_Keperawatan:, :Harga:, :Massa_Jenis:, :Tipe_Finishing_Warna:, :Kelebihan:, :Kekurangan:)', [...], false)
+ 2 APPPATH\Models\M_PenilaianPerusahaan.php(15): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\PenilaianPerusahaan.php(46): App\Models\M_PenilaianPerusahaan->tambah([...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PenilaianPerusahaan->tambah()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianPerusahaan))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\GABRIEL PANJAITAN\\Downloads\\CodeIgniter4-develop\\TST-toko-material-toko-furnitur\\public\\index.php')

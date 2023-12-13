@@ -7,4 +7,5 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/', 'Home::index');
 $routes->get('/PenilaianPerusahaan', 'PenilaianPerusahaan::index');
+$routes->post('PenilaianPerusahaan/tambah', 'PenilaianPerusahaan::tambah');
 
