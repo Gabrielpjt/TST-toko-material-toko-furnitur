@@ -31,3 +31,354 @@ in APPPATH\Controllers\PenilaianPerusahaan.php on line 8.
  7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
  9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\GABRIEL PANJAITAN\\Downloads\\CodeIgniter4-develop\\TST-toko-material-toko-furnitur\\public\\index.php')
+CRITICAL - 2023-12-13 14:58:01 --> Class "App\Model" not found
+in APPPATH\Models\M_PenilaianPerusahaan.php on line 7.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(309): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(288): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\GABRIEL PANJAITAN\\Downloads\\CodeIgniter4-develop\\TST-toko-material-toko-furnitur\\app\\Models\\M_PenilaianPerusahaan.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\M_PenilaianPerusahaan')
+ 4 APPPATH\Controllers\PenilaianPerusahaan.php(12): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\M_PenilaianPerusahaan')
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PenilaianPerusahaan->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianPerusahaan))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\GABRIEL PANJAITAN\\Downloads\\CodeIgniter4-develop\\TST-toko-material-toko-furnitur\\public\\index.php')
+ERROR - 2023-12-13 14:59:10 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'tst_db', 3306, '', 0)
+#1 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\BaseModel.php(623): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\app\Models\M_PenilaianPerusahaan.php(11): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\app\Controllers\PenilaianPerusahaan.php(17): App\Models\M_PenilaianPerusahaan->getAllData()
+#8 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\CodeIgniter.php(942): App\Controllers\PenilaianPerusahaan->index()
+#9 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianPerusahaan))
+#10 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\GABRIE...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\BaseModel.php(623): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\app\Models\M_PenilaianPerusahaan.php(11): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\app\Controllers\PenilaianPerusahaan.php(17): App\Models\M_PenilaianPerusahaan->getAllData()
+#7 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\CodeIgniter.php(942): App\Controllers\PenilaianPerusahaan->index()
+#8 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianPerusahaan))
+#9 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\GABRIE...')
+#12 {main}
+CRITICAL - 2023-12-13 14:59:10 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `data_penilaian_kayu_dari_perusahaan`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(623): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\M_PenilaianPerusahaan.php(11): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\PenilaianPerusahaan.php(17): App\Models\M_PenilaianPerusahaan->getAllData()
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PenilaianPerusahaan->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianPerusahaan))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\GABRIEL PANJAITAN\\Downloads\\CodeIgniter4-develop\\TST-toko-material-toko-furnitur\\public\\index.php')
+ERROR - 2023-12-13 15:00:11 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'tsttokomaterial', 3306, '', 0)
+#1 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\BaseModel.php(623): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\app\Models\M_PenilaianPerusahaan.php(11): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\app\Controllers\PenilaianPerusahaan.php(17): App\Models\M_PenilaianPerusahaan->getAllData()
+#8 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\CodeIgniter.php(942): App\Controllers\PenilaianPerusahaan->index()
+#9 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianPerusahaan))
+#10 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\GABRIE...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\BaseModel.php(623): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\app\Models\M_PenilaianPerusahaan.php(11): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\app\Controllers\PenilaianPerusahaan.php(17): App\Models\M_PenilaianPerusahaan->getAllData()
+#7 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\CodeIgniter.php(942): App\Controllers\PenilaianPerusahaan->index()
+#8 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianPerusahaan))
+#9 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\GABRIE...')
+#12 {main}
+CRITICAL - 2023-12-13 15:00:11 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `data_penilaian_kayu_dari_perusahaan`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(623): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\M_PenilaianPerusahaan.php(11): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\PenilaianPerusahaan.php(17): App\Models\M_PenilaianPerusahaan->getAllData()
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PenilaianPerusahaan->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianPerusahaan))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\GABRIEL PANJAITAN\\Downloads\\CodeIgniter4-develop\\TST-toko-material-toko-furnitur\\public\\index.php')
+ERROR - 2023-12-13 15:11:37 --> mysqli_sql_exception: Table 'tsttokomaterial.data_penilaian_kayu_dari_perusahaan' doesn't exist in C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\BaseModel.php(623): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\app\Models\M_PenilaianPerusahaan.php(11): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\app\Controllers\PenilaianPerusahaan.php(17): App\Models\M_PenilaianPerusahaan->getAllData()
+#8 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\CodeIgniter.php(942): App\Controllers\PenilaianPerusahaan->index()
+#9 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianPerusahaan))
+#10 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\GABRIE...')
+#13 {main}
+CRITICAL - 2023-12-13 15:11:37 --> Table 'tsttokomaterial.data_penilaian_kayu_dari_perusahaan' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `data_penilaian_kayu_dari_perusahaan`', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(623): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\M_PenilaianPerusahaan.php(11): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\PenilaianPerusahaan.php(17): App\Models\M_PenilaianPerusahaan->getAllData()
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PenilaianPerusahaan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianPerusahaan))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\GABRIEL PANJAITAN\\Downloads\\CodeIgniter4-develop\\TST-toko-material-toko-furnitur\\public\\index.php')
+ERROR - 2023-12-13 15:13:06 --> mysqli_sql_exception: Table 'tsttokomaterial.data penilaian kayu dari' doesn't exist in C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\BaseModel.php(623): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\app\Models\M_PenilaianPerusahaan.php(11): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\app\Controllers\PenilaianPerusahaan.php(17): App\Models\M_PenilaianPerusahaan->getAllData()
+#8 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\CodeIgniter.php(942): App\Controllers\PenilaianPerusahaan->index()
+#9 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianPerusahaan))
+#10 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\GABRIE...')
+#13 {main}
+CRITICAL - 2023-12-13 15:13:06 --> Table 'tsttokomaterial.data penilaian kayu dari' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `data penilaian kayu dari` `perusahaan`', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(623): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\M_PenilaianPerusahaan.php(11): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\PenilaianPerusahaan.php(17): App\Models\M_PenilaianPerusahaan->getAllData()
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PenilaianPerusahaan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianPerusahaan))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\GABRIEL PANJAITAN\\Downloads\\CodeIgniter4-develop\\TST-toko-material-toko-furnitur\\public\\index.php')
+ERROR - 2023-12-13 15:31:56 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'tsttokomaterial', 3308, '', 0)
+#1 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\BaseModel.php(623): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\app\Models\M_PenilaianPerusahaan.php(11): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\app\Controllers\PenilaianPerusahaan.php(17): App\Models\M_PenilaianPerusahaan->getAllData()
+#8 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\CodeIgniter.php(942): App\Controllers\PenilaianPerusahaan->index()
+#9 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianPerusahaan))
+#10 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\GABRIE...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\BaseModel.php(623): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\app\Models\M_PenilaianPerusahaan.php(11): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\app\Controllers\PenilaianPerusahaan.php(17): App\Models\M_PenilaianPerusahaan->getAllData()
+#7 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\CodeIgniter.php(942): App\Controllers\PenilaianPerusahaan->index()
+#8 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianPerusahaan))
+#9 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\GABRIE...')
+#12 {main}
+CRITICAL - 2023-12-13 15:31:56 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `data_penilaian_kayu_dari_perusahaan`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(623): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\M_PenilaianPerusahaan.php(11): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\PenilaianPerusahaan.php(17): App\Models\M_PenilaianPerusahaan->getAllData()
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PenilaianPerusahaan->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianPerusahaan))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\GABRIEL PANJAITAN\\Downloads\\CodeIgniter4-develop\\TST-toko-material-toko-furnitur\\public\\index.php')
+ERROR - 2023-12-13 15:34:16 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'tsttokomaterial', 3308, '', 0)
+#1 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\BaseModel.php(623): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\app\Models\M_PenilaianPerusahaan.php(11): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\app\Controllers\PenilaianPerusahaan.php(17): App\Models\M_PenilaianPerusahaan->getAllData()
+#8 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\CodeIgniter.php(942): App\Controllers\PenilaianPerusahaan->index()
+#9 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianPerusahaan))
+#10 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\GABRIE...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\BaseModel.php(623): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\app\Models\M_PenilaianPerusahaan.php(11): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\app\Controllers\PenilaianPerusahaan.php(17): App\Models\M_PenilaianPerusahaan->getAllData()
+#7 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\CodeIgniter.php(942): App\Controllers\PenilaianPerusahaan->index()
+#8 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianPerusahaan))
+#9 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\GABRIE...')
+#12 {main}
+CRITICAL - 2023-12-13 15:34:16 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `data_penilaian_kayu_dari_perusahaan`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(623): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\M_PenilaianPerusahaan.php(11): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\PenilaianPerusahaan.php(17): App\Models\M_PenilaianPerusahaan->getAllData()
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PenilaianPerusahaan->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianPerusahaan))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\GABRIEL PANJAITAN\\Downloads\\CodeIgniter4-develop\\TST-toko-material-toko-furnitur\\public\\index.php')
+ERROR - 2023-12-13 15:34:35 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'tsttokomaterial', 3308, '', 0)
+#1 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\BaseModel.php(623): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\app\Models\M_PenilaianPerusahaan.php(11): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\app\Controllers\PenilaianPerusahaan.php(17): App\Models\M_PenilaianPerusahaan->getAllData()
+#8 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\CodeIgniter.php(942): App\Controllers\PenilaianPerusahaan->index()
+#9 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianPerusahaan))
+#10 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\GABRIE...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\BaseModel.php(623): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\app\Models\M_PenilaianPerusahaan.php(11): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\app\Controllers\PenilaianPerusahaan.php(17): App\Models\M_PenilaianPerusahaan->getAllData()
+#7 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\CodeIgniter.php(942): App\Controllers\PenilaianPerusahaan->index()
+#8 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianPerusahaan))
+#9 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\GABRIE...')
+#12 {main}
+CRITICAL - 2023-12-13 15:34:35 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `data_penilaian_kayu_dari_perusahaan`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(623): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\M_PenilaianPerusahaan.php(11): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\PenilaianPerusahaan.php(17): App\Models\M_PenilaianPerusahaan->getAllData()
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PenilaianPerusahaan->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianPerusahaan))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\GABRIEL PANJAITAN\\Downloads\\CodeIgniter4-develop\\TST-toko-material-toko-furnitur\\public\\index.php')
+ERROR - 2023-12-13 15:35:02 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'tsttokomaterial', 3308, '', 0)
+#1 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\BaseModel.php(623): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\app\Models\M_PenilaianPerusahaan.php(11): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\app\Controllers\PenilaianPerusahaan.php(17): App\Models\M_PenilaianPerusahaan->getAllData()
+#8 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\CodeIgniter.php(942): App\Controllers\PenilaianPerusahaan->index()
+#9 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianPerusahaan))
+#10 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\GABRIE...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\BaseModel.php(623): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\app\Models\M_PenilaianPerusahaan.php(11): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\app\Controllers\PenilaianPerusahaan.php(17): App\Models\M_PenilaianPerusahaan->getAllData()
+#7 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\CodeIgniter.php(942): App\Controllers\PenilaianPerusahaan->index()
+#8 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianPerusahaan))
+#9 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\GABRIE...')
+#12 {main}
+CRITICAL - 2023-12-13 15:35:02 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `data_penilaian_kayu_dari_perusahaan`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(623): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\M_PenilaianPerusahaan.php(11): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\PenilaianPerusahaan.php(17): App\Models\M_PenilaianPerusahaan->getAllData()
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PenilaianPerusahaan->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianPerusahaan))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\GABRIEL PANJAITAN\\Downloads\\CodeIgniter4-develop\\TST-toko-material-toko-furnitur\\public\\index.php')
