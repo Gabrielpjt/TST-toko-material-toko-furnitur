@@ -1,7 +1,37 @@
 <!-- Begin Page Content -->
 <div class="container-fluid">
-    <!-- Page Heading -->
     <h1 class="h3 mb-4 text-gray-800"><?= $judul ?></h1>
+
+    <?php if(session()->get('message')) : ?>
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            Data Penilaian berhasil <strong><?= session()->getFlashdata('message'); ?></strong> 
+        </div>
+        <script>
+            $(document).ready(function(){
+                $(".alert").alert();
+            });
+        </script>
+    <?php endif; ?>
+
+    <div class="row">
+        <div class="col-md-6">
+            <?php 
+            $errors = session()->get('err');
+            if (!empty($errors) && is_array($errors)) {
+                echo "<div class='alert alert-danger' role='alert'>";
+                foreach ($errors as $error) {
+                    echo $error . "<br>";
+                }
+                echo "</div>";
+                session()->remove('err');
+            }
+            ?>
+        </div>
+    </div>
+
 
     <div class="card">
         <div class="card-header">
@@ -10,8 +40,8 @@
                 <i class="fa fa-plus"></i> Tambah Data
             </button>
         </div>
-        <div class="card-body">
-            <table class='table table-striped'>
+        <div class="table-responsive">
+            <table class='table'>
                 <thead>
                     <tr>
                         <th>Id</th>
@@ -25,6 +55,7 @@
                         <th>Tipe Finishing Warna</th>
                         <th>Kelebihan</th>
                         <th>Kekurangan</th>
+                        <th>Opsi</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -41,6 +72,10 @@
                             <td><?= $row['Tipe_Finishing_Warna']; ?></td>
                             <td><?= $row['Kelebihan']; ?></td>
                             <td><?= $row['Kekurangan']; ?></td>
+                            <td>
+                            <!-- Perbaikan pada tombol hapus, sesuaikan data-id -->
+                            <a href="/PenilaianPerusahaan/hapus/<?= $row['id']; ?>" class="btn btn-primary"><i class="fa fa-trash-alt"></i></a>
+                            </td>
                         </tr>
                     <?php endforeach; ?>
                 </tbody>
@@ -106,14 +141,51 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="submit" class="btn btn-primary">Tambah Data</button>
+                    <button type="submit" name= "tambah" class="btn btn-primary">Tambah Data</button>
                 </div>
             </form>
         </div>
     </div>
 </div>
+<div class="modal fade" id="modalHapus">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <!-- Perbaikan pada form hapus -->
+            <!-- Ganti method form menjadi DELETE -->
+            <div class="modal-body">
+                Apakah Anda yakin ingin menghapus data ini?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <!-- Perubahan pada tombol hapus, menggunakan method DELETE -->
+                <a href="/PenilaianPerusahaan/hapus/<?= $row['id']; ?>" class="btn btn-primary">Yakin</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function(){
+        // Menangani saat tombol hapus diklik
+        $('.btn-delete').click(function() {
+            // Mengambil ID yang terkait dari tombol hapus yang diklik
+            var id = $(this).closest('tr').find('td:first').text();
+            
+            // Mengatur URL hapus sesuai dengan ID yang dipilih
+            var deleteUrl = '/PenilaianPerusahaan/hapus/' + id;
+            
+            // Mengatur href pada tombol konfirmasi hapus dengan URL yang tepat
+            $('#modalHapus .btn-primary').attr('href', deleteUrl);
+        });
+    });
+</script>
+
+
+
+
 <!-- Sebelum tag penutup </body> -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
 
 

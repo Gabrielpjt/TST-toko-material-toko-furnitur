@@ -28,24 +28,66 @@ class PenilaianPerusahaan extends BaseController
         view('template/v_footer');
     }
 
-    public function tambah(){
-        $data = [
-            "Jenis_Kayu" => $this->request->getPost('Jenis_Kayu'),
-            "Merek_Kayu" => $this->request->getPost('Merek_Kayu'),
-            "Tingkat_Tekstur" => $this->request->getPost('Tingkat_Tekstur'),
-            "Tingkat_Ketahanan" => $this->request->getPost('Tingkat_Ketahanan'),
-            "Tingkat_Keperawatan" => $this->request->getPost('Tingkat_Keperawatan'),
-            "Harga" => $this->request->getPost('Harga'),
-            "Massa_Jenis" => $this->request->getPost('Massa_Jenis'),
-            "Tipe_Finishing_Warna" => $this->request->getPost('Tipe_Finishing_Warna'),
-            "Kelebihan" => $this->request->getPost('Kelebihan'),
-            "Kekurangan" => $this->request->getPost('Kekurangan')
-        ];
+    public function tambah()
+    {
+        if (isset($_POST['tambah'])) {
+            $validation = \Config\Services::validation();
 
-        //insert data
-        $success = $this->model->tambah($data);
-        if ($success){
-            return redirect()->to(base_url('PenilaianPerusahaan'));
+            $validation->setRules([
+                'Jenis_Kayu' => ['rules' => 'required|alpha_numeric|max_length[30]'],
+                'Merek_Kayu' => ['rules' => 'required|alpha_numeric|max_length[30]'],
+                'Tingkat_Tekstur' => ['rules' => 'required|integer|max_length[30]'],
+                'Tingkat_Ketahanan' => ['rules' => 'required|integer|max_length[30]'],
+                'Tingkat_Keperawatan' => ['rules' => 'required|integer|max_length[30]'],
+                'Harga' => ['rules' => 'required|numeric|max_length[30]'],
+                'Massa_Jenis' => ['rules' => 'required|numeric|max_length[30]'],
+                'Tipe_Finishing_Warna' => ['rules' => 'required|alpha_numeric|max_length[30]'],
+                'Kelebihan' => ['rules' => 'required|max_length[30]'],
+                'Kekurangan' => ['rules' => 'required|max_length[30]'],
+            ]);
+
+            $isDataValid = $validation->withRequest($this->request)->run();
+
+            if (!$isDataValid) {
+                $errors = $validation->getErrors();
+
+                session()->setFlashdata('err', $errors);
+
+                return redirect()->to(base_url('PenilaianPerusahaan'));
+            } else {
+                $data = [
+                    "Jenis_Kayu" => $this->request->getPost('Jenis_Kayu'),
+                    "Merek_Kayu" => $this->request->getPost('Merek_Kayu'),
+                    "Tingkat_Tekstur" => $this->request->getPost('Tingkat_Tekstur'),
+                    "Tingkat_Ketahanan" => $this->request->getPost('Tingkat_Ketahanan'),
+                    "Tingkat_Keperawatan" => $this->request->getPost('Tingkat_Keperawatan'),
+                    "Harga" => $this->request->getPost('Harga'),
+                    "Massa_Jenis" => $this->request->getPost('Massa_Jenis'),
+                    "Tipe_Finishing_Warna" => $this->request->getPost('Tipe_Finishing_Warna'),
+                    "Kelebihan" => $this->request->getPost('Kelebihan'),
+                    "Kekurangan" => $this->request->getPost('Kekurangan')
+                ];
+
+                //insert data
+                $success = $this->model->tambah($data);
+                if ($success) {
+                    session()->setFlashdata('message', 'Ditambahkan');
+                    return redirect()->to(base_url('PenilaianPerusahaan'));
+                }
+            }
+        } else {
+            return redirect()->to('/PenilaianPerusahaan');
         }
     }
+
+    public function hapus($id) {
+        $success = $this->model->hapus($id);
+        if ($success) {
+            session()->setFlashdata('message', 'Data berhasil dihapus');
+        } else {
+            session()->setFlashdata('message', 'Gagal menghapus data');
+        }
+        return redirect()->to(base_url('PenilaianPerusahaan'));
+    }
+    
 }
