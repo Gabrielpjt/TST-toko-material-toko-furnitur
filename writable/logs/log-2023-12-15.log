@@ -1,0 +1,138 @@
+INFO - 2023-12-15 09:49:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-15 09:49:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-15 09:49:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-15 09:49:42 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'tsttokomaterial', 3308, '', 0)
+#1 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\BaseModel.php(661): CodeIgniter\Model->doFirst()
+#6 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\app\ThirdParty\myth-auth\src\Authentication\LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+#7 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\app\ThirdParty\myth-auth\src\Authentication\LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate(Array, true)
+#8 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\app\ThirdParty\myth-auth\src\Controllers\AuthController.php(109): Myth\Auth\Authentication\LocalAuthenticator->attempt(Array, false)
+#9 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\CodeIgniter.php(942): Myth\Auth\Controllers\AuthController->attemptLogin()
+#10 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#11 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\GABRIE...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Database\BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\BaseModel.php(661): CodeIgniter\Model->doFirst()
+#5 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\app\ThirdParty\myth-auth\src\Authentication\LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+#6 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\app\ThirdParty\myth-auth\src\Authentication\LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate(Array, true)
+#7 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\app\ThirdParty\myth-auth\src\Controllers\AuthController.php(109): Myth\Auth\Authentication\LocalAuthenticator->attempt(Array, false)
+#8 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\CodeIgniter.php(942): Myth\Auth\Controllers\AuthController->attemptLogin()
+#9 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#10 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\GABRIEL PANJAITAN\Downloads\CodeIgniter4-develop\TST-toko-material-toko-furnitur\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\GABRIE...')
+#13 {main}
+CRITICAL - 2023-12-15 09:49:42 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(661): CodeIgniter\Model->doFirst()
+ 5 APPPATH\ThirdParty\myth-auth\src\Authentication\LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+ 6 APPPATH\ThirdParty\myth-auth\src\Authentication\LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate([...], true)
+ 7 APPPATH\ThirdParty\myth-auth\src\Controllers\AuthController.php(109): Myth\Auth\Authentication\LocalAuthenticator->attempt([...], false)
+ 8 SYSTEMPATH\CodeIgniter.php(942): Myth\Auth\Controllers\AuthController->attemptLogin()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\GABRIEL PANJAITAN\\Downloads\\CodeIgniter4-develop\\TST-toko-material-toko-furnitur\\public\\index.php')
+INFO - 2023-12-15 09:50:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-15 09:50:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-15 09:50:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-15 09:57:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-15 09:58:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-15 10:59:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-15 10:59:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-15 10:59:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-15 10:59:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-15 11:00:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-15 11:00:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-15 11:00:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-15 11:08:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-15 11:09:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-15 11:13:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-15 11:13:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-15 11:13:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-15 11:22:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-15 11:23:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-15 11:23:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-15 11:23:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-15 11:23:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-15 11:23:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-15 11:31:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-15 14:10:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-15 14:10:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-15 14:10:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-15 17:54:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-15 17:54:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-15 17:55:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-15 17:55:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-12-15 17:55:04 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$session is deprecated in APPPATH\Controllers\Home.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\GABRIEL PANJAITAN\\Downloads\\CodeIgniter4-develop\\TST-toko-material-toko-furnitur\\public\\index.php')
+WARNING - 2023-12-15 17:55:04 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$auth is deprecated in APPPATH\Controllers\Home.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\GABRIEL PANJAITAN\\Downloads\\CodeIgniter4-develop\\TST-toko-material-toko-furnitur\\public\\index.php')
+INFO - 2023-12-15 17:55:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-12-15 17:55:09 --> [DEPRECATED] Creation of dynamic property App\Controllers\PenilaianPerusahaan::$session is deprecated in APPPATH\Controllers\PenilaianPerusahaan.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\PenilaianPerusahaan->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\GABRIEL PANJAITAN\\Downloads\\CodeIgniter4-develop\\TST-toko-material-toko-furnitur\\public\\index.php')
+WARNING - 2023-12-15 17:55:09 --> [DEPRECATED] Creation of dynamic property App\Controllers\PenilaianPerusahaan::$auth is deprecated in APPPATH\Controllers\PenilaianPerusahaan.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\PenilaianPerusahaan->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\GABRIEL PANJAITAN\\Downloads\\CodeIgniter4-develop\\TST-toko-material-toko-furnitur\\public\\index.php')
+INFO - 2023-12-15 17:55:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-12-15 17:55:36 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$session is deprecated in APPPATH\Controllers\Home.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\GABRIEL PANJAITAN\\Downloads\\CodeIgniter4-develop\\TST-toko-material-toko-furnitur\\public\\index.php')
+WARNING - 2023-12-15 17:55:36 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$auth is deprecated in APPPATH\Controllers\Home.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\GABRIEL PANJAITAN\\Downloads\\CodeIgniter4-develop\\TST-toko-material-toko-furnitur\\public\\index.php')
+INFO - 2023-12-15 17:55:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-12-15 17:55:45 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$session is deprecated in APPPATH\Controllers\Home.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\GABRIEL PANJAITAN\\Downloads\\CodeIgniter4-develop\\TST-toko-material-toko-furnitur\\public\\index.php')
+WARNING - 2023-12-15 17:55:45 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$auth is deprecated in APPPATH\Controllers\Home.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\GABRIEL PANJAITAN\\Downloads\\CodeIgniter4-develop\\TST-toko-material-toko-furnitur\\public\\index.php')

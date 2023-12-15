@@ -11,10 +11,22 @@ class PenilaianPerusahaan extends BaseController
     
     public function __construct(){
         $this->model = new M_PenilaianPerusahaan();
+        helper('en');
+        $this->session = service('session');
+        $this->auth   = service('authentication');
     }
     
     public function index()
     {
+
+        if (!$this->auth->check()) {
+            $redirectURL = session('redirect_url') ?? site_url($this->config->landingRoute);
+            unset($_SESSION['redirect_url']);
+
+            return redirect()
+                ->to($redirectURL);
+        }
+
         $data = [ 
             'judul' => 'Data Penilaian Perusahaan',
             'penilaianperusahaan' => $this->model->getAllData()
@@ -30,6 +42,14 @@ class PenilaianPerusahaan extends BaseController
 
     public function tambah()
     {
+        if (!$this->auth->check()) {
+            $redirectURL = session('redirect_url') ?? site_url($this->config->landingRoute);
+            unset($_SESSION['redirect_url']);
+
+            return redirect()
+                ->to($redirectURL);
+        }
+
         if (isset($_POST['tambah'])) {
             $validation = \Config\Services::validation();
 
@@ -81,6 +101,15 @@ class PenilaianPerusahaan extends BaseController
     }
 
     public function hapus($id) {
+
+        if (!$this->auth->check()) {
+            $redirectURL = session('redirect_url') ?? site_url($this->config->landingRoute);
+            unset($_SESSION['redirect_url']);
+
+            return redirect()
+                ->to($redirectURL);
+        }
+
         $success = $this->model->hapus($id);
         if ($success) {
             session()->setFlashdata('message', 'Data berhasil dihapus');
