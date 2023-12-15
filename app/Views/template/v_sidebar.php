@@ -43,7 +43,7 @@
 
 <!-- Nav Item - Dashboard -->
 <li class="nav-item">
-    <a class="nav-link" href="index.html">
+    <a class="nav-link" href="<?= base_url('Rekomendasi'); ?>">
         <i class="fas fa-fw fa-school"></i>
         <span>Rekomendasi Pelanggan</span></a>
 </li>

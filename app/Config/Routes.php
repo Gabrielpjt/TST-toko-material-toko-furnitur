@@ -11,6 +11,8 @@ use CodeIgniter\Router\RouteCollection;
     $routes->get('/PenilaianPerusahaan', 'PenilaianPerusahaan::index');
     $routes->post('PenilaianPerusahaan/tambah', 'PenilaianPerusahaan::tambah');
     $routes->get('PenilaianPerusahaan/hapus/(:num)', 'PenilaianPerusahaan::hapus/$1');
+    $routes->get('/Rekomendasi', 'Rekomendasi::index');
+    $routes->post('/Rekomendasi/cariRekomendasi', 'Rekomendasi::cariRekomendasi');
  });
 
 

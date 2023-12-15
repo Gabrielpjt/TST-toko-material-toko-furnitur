@@ -26,5 +26,28 @@ class M_PenilaianPerusahaan extends Model {
             return false;
         }
     }
+
+    public function cariRekomendasikan($tingkatTekstur, $tingkatKeperawatan, $tingkatKetahanan) {
+        try {
+            // Pastikan variabel tidak kosong sebelum melakukan pencarian
+            if (!empty($tingkatTekstur) && !empty($tingkatKeperawatan) && !empty($tingkatKetahanan)) {
+                // Lakukan query sesuai dengan kriteria pencarian
+                return $this->db->table($this->table)
+                                ->where('Tingkat_Tekstur', $tingkatTekstur)
+                                ->where('Tingkat_Keperawatan', $tingkatKeperawatan)
+                                ->where('Tingkat_Ketahanan', $tingkatKetahanan)
+                                ->get()
+                                ->getResultArray();
+            } else {
+                // Jika ada variabel yang kosong, kembalikan pesan kesalahan atau status yang sesuai
+                return ['error' => 'Semua kolom pencarian harus diisi'];
+            }
+        } catch (\Exception $e) {
+            // Di sini, Anda dapat menangani kesalahan atau menambahkan logging jika diperlukan
+            log_message('error', $e->getMessage());
+            return ['error' => 'Terjadi kesalahan saat melakukan pencarian'];
+        }
+    }
+    
     
 }
