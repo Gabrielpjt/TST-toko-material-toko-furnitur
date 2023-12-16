@@ -16,4 +16,5 @@ $routes->group('', ['filter' => 'login'], function ($routes) {
    $routes->get('PenilaianPelanggan', 'PenilaianPelanggan::index');
    $routes->get('/form', 'PenilaianPelanggan::form');
    $routes->post('/PenilaianPelanggan/save', 'PenilaianPelanggan::save');
+   $routes->get('/PenilaianPelanggan/(:num)', 'PenilaianPelanggan::detail/$1');
 });

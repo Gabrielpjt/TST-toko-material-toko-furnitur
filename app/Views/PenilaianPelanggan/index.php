@@ -12,13 +12,31 @@
                 <thead>
                     <tr>
                         <th scope="col">#</th>
-                        <th scope="col">Sampul</th>
-                        <th scope="col">Judul</th>
-                        <th scope="col">Aksi</th>
+                        <th scope="col">Jenis Kayu</th>
+                        <th scope="col">Merek Kayu</th>
+                        <th scope="col">Penilaian Overall</th>
+                        <th scope="col">Tekstur</th>
+                        <th scope="col">Ketahanan</th>
+                        <th scope="col">Keperawatan</th>
+                        <th scope="col">Detail</th>
                     </tr>
                 </thead>
                 <tbody>
                     <?php $i = 1; ?>
+                    <?php foreach ($penilaianPelanggan as $p) : ?>
+                        <tr>
+                            <th scope="row"> <?= $i++; ?></th>
+                            <td><?= $p['jenis_kayu']; ?></td>
+                            <td><?= $p['merek_kayu']; ?></td>
+                            <td><?= $p['penilaian_keseluruhan']; ?></td>
+                            <td><?= $p['tekstur']; ?></td>
+                            <td><?= $p['ketahanan']; ?></td>
+                            <td><?= $p['keperawatan']; ?></td>
+                            <td>
+                                <a href="/PenilaianPelanggan/<?= $p['id']; ?>" class=" btn btn-success">Detail</a>
+                            </td>
+                        </tr>
+                    <?php endforeach; ?>
 
                 </tbody>
             </table>

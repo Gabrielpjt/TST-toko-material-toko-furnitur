@@ -40,7 +40,6 @@
                             <div class="invalid-feedback">
                                 <?= validation_show_error('penilaian_keseluruhan') ?>
                             </div>
-
                         <?php else : ?>
                             <input type="text" class="form-control " id="penilaian_keseluruhan" name="penilaian_keseluruhan">
                         <?php endif ?>

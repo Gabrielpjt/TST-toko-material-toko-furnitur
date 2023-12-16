@@ -15,7 +15,6 @@ class PenilaianPelanggan extends BaseController
     }
     public function index()
     {
-        $penilaian = $this->model->findAll();
         $data = [
             'judul' => 'Daftar Penilaian Pelanggan',
             'penilaianPelanggan' => $this->model->getPenilaian()
@@ -109,5 +108,16 @@ class PenilaianPelanggan extends BaseController
         ]);
         session()->setFlashdata('pesan', 'Data berhasil ditambahkan.');
         return redirect()->to('/');
+    }
+    public function detail($id)
+    {
+        $data = [
+            'title' => 'Detail Penilaian',
+            'penilaianPelanggan' => $this->model->getKomik($id)
+        ];
+        if (empty($data['komik'])) {
+            throw new \CodeIgniter\Exceptions\PageNotFoundException('Penilaian ' . $id . ' Tidak Ditemukan');
+        }
+        return view('penilaianPelanggan/detail', $data);
     }
 }
