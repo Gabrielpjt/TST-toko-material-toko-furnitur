@@ -101,7 +101,7 @@ class PenilaianPelanggan extends BaseController
             'kekurangan' => $this->request->getVar(['kekurangan']),
         ]);
         session()->setFlashdata('pesan', 'Data berhasil ditambahkan.');
-        return redirect()->to('/');
+        return redirect()->to('/PenilaianPelanggan');
     }
     public function detail($id)
     {
