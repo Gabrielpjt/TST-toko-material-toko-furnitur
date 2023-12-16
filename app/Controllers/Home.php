@@ -5,14 +5,13 @@ namespace App\Controllers;
 
 class Home extends BaseController
 {
-    public function __construct()
-    {
+    public function __construct(){
         helper('en');
         $this->session = service('session');
         $this->auth   = service('authentication');
     }
 
-    public function index(): string
+    public function index() : string
     {
         //jika belum login,user tidak memiliki akses
         if (!$this->auth->check()) {
@@ -23,9 +22,9 @@ class Home extends BaseController
                 ->to($redirectURL);
         }
 
-        $data = [
+        $data = [ 
             'judul' => 'Homepage'
         ];
-        return view('template/v_header', $data) . view('template/v_sidebar') . view('template/v_topbar') . view('Home/index') . view('template/v_footer');
+        return view('template/v_header', $data).view('template/v_sidebar').view('template/v_topbar').view('Home/index').view('template/v_footer');
     }
 }
