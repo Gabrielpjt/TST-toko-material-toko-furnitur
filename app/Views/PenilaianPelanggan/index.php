@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row">
         <div class="col">
-            <h1 class="mt-2">Daftar Komik</h1>
+            <h1 class="mt-2">Daftar Penilaian</h1>
             <a href="/PenilaianPelanggan/create" class="btn btn-primary mb-2"></a>
             <?php if (session()->getFlashData('pesan')) : ?>
                 <div class="alert alert-success" role='alert'>
@@ -21,7 +21,8 @@
                         <th scope="col">Tekstur</th>
                         <th scope="col">Ketahanan</th>
                         <th scope="col">Keperawatan</th>
-                        <th scope="col">Detail</th>
+                        <th scope="col">Kelebihan</th>
+                        <th scope="col">Kekurangan</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -35,9 +36,8 @@
                             <td><?= $p['tekstur']; ?></td>
                             <td><?= $p['ketahanan']; ?></td>
                             <td><?= $p['keperawatan']; ?></td>
-                            <td>
-                                <a href="/PenilaianPelanggan/<?= $p['id']; ?>" class=" btn btn-success">Detail</a>
-                            </td>
+                            <td><?= $p['kelebihan']; ?></td>
+                            <td><?= $p['kekurangan']; ?></td>
                         </tr>
                     <?php endforeach; ?>
 
