@@ -19,11 +19,8 @@ class PenilaianPelanggan extends BaseController
             'judul' => 'Daftar Penilaian Pelanggan',
             'penilaianPelanggan' => $this->model->getPenilaian()
         ];
-        return view('template/v_header', $data) .
-            view('template/v_sidebar') .
-            view('template/v_topbar') .
-            view('PenilaianPelanggan/index') .
-            view('template/v_footer');
+        return
+            view('PenilaianPelanggan/index', $data);
     }
 
     public function form()
@@ -33,11 +30,8 @@ class PenilaianPelanggan extends BaseController
             'judul' => 'Form Penilaian Pelanggan',
             'validation' => \Config\Services::validation()
         ];
-        return view('template/v_header', $data) .
-            view('template/v_sidebar') .
-            view('template/v_topbar') .
-            view('PenilaianPelanggan/form') .
-            view('template/v_footer');
+        return
+            view('PenilaianPelanggan/form', $data);
     }
 
     public function save()
@@ -112,12 +106,13 @@ class PenilaianPelanggan extends BaseController
     public function detail($id)
     {
         $data = [
-            'title' => 'Detail Penilaian',
-            'penilaianPelanggan' => $this->model->getKomik($id)
+            'judul' => 'Detail Penilaian',
+            'penilaianPelanggan' => $this->model->getPenilaian($id)
         ];
-        if (empty($data['komik'])) {
+        if (empty($data['penilaianPelanggan'])) {
             throw new \CodeIgniter\Exceptions\PageNotFoundException('Penilaian ' . $id . ' Tidak Ditemukan');
         }
-        return view('penilaianPelanggan/detail', $data);
+        return
+            view('PenilaianPelanggan/detail', $data);
     }
 }
