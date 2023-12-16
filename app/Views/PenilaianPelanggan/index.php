@@ -21,7 +21,8 @@
                         <th scope="col">Tekstur</th>
                         <th scope="col">Ketahanan</th>
                         <th scope="col">Keperawatan</th>
-                        <th scope="col">Detail</th>
+                        <th scope="col">Kelebihan</th>
+                        <th scope="col">Kekurangan</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -35,9 +36,8 @@
                             <td><?= $p['tekstur']; ?></td>
                             <td><?= $p['ketahanan']; ?></td>
                             <td><?= $p['keperawatan']; ?></td>
-                            <td>
-                                <a href="/PenilaianPelanggan/<?= $p['id']; ?>" class=" btn btn-success">Detail</a>
-                            </td>
+                            <td><?= $p['kelebihan']; ?></td>
+                            <td><?= $p['kekurangan']; ?></td>
                         </tr>
                     <?php endforeach; ?>
 
