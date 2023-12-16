@@ -8,7 +8,7 @@ class M_PenilaianPelanggan extends Model
 {
     protected $table = 'penilaian_pelanggan';
     protected $primaryKey = 'id';
-    protected $allowedFields = ['nama', 'slug', 'penulis', 'penerbit', 'sampul'];
+    protected $allowedFields = ['jenis_kayu', 'merek_kayu', 'review_keseluruhan', 'tekstur', 'ketahanan', 'keperawatan', 'kelebihan', 'kekurangan'];
 
     public function getPenilaian($id = false)
     {
