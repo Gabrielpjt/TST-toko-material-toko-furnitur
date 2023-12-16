@@ -616,3 +616,73 @@ INFO - 2023-12-16 07:16:05 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2023-12-16 07:16:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-12-16 07:18:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-12-16 07:18:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 08:41:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 08:41:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 08:42:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-12-16 08:42:23 --> [DEPRECATED] Creation of dynamic property App\Controllers\PenilaianPerusahaan::$session is deprecated in APPPATH\Controllers\PenilaianPerusahaan.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\PenilaianPerusahaan->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TST-toko-material-toko-furnitur\\public\\index.php')
+WARNING - 2023-12-16 08:42:23 --> [DEPRECATED] Creation of dynamic property App\Controllers\PenilaianPerusahaan::$auth is deprecated in APPPATH\Controllers\PenilaianPerusahaan.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\PenilaianPerusahaan->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TST-toko-material-toko-furnitur\\public\\index.php')
+INFO - 2023-12-16 08:42:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 08:42:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-12-16 08:42:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\Rekomendasi::$session is deprecated in APPPATH\Controllers\Rekomendasi.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Rekomendasi->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TST-toko-material-toko-furnitur\\public\\index.php')
+WARNING - 2023-12-16 08:42:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\Rekomendasi::$auth is deprecated in APPPATH\Controllers\Rekomendasi.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Rekomendasi->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TST-toko-material-toko-furnitur\\public\\index.php')
+INFO - 2023-12-16 08:42:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 08:43:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 08:44:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 08:46:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 09:05:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 09:05:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 09:06:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-16 09:06:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-12-16 09:06:22 --> [DEPRECATED] Creation of dynamic property App\Controllers\Rekomendasi::$session is deprecated in APPPATH\Controllers\Rekomendasi.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Rekomendasi->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TST-toko-material-toko-furnitur\\public\\index.php')
+WARNING - 2023-12-16 09:06:22 --> [DEPRECATED] Creation of dynamic property App\Controllers\Rekomendasi::$auth is deprecated in APPPATH\Controllers\Rekomendasi.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Rekomendasi->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TST-toko-material-toko-furnitur\\public\\index.php')
+INFO - 2023-12-16 09:06:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-12-16 09:06:23 --> [DEPRECATED] Creation of dynamic property App\Controllers\PenilaianPerusahaan::$session is deprecated in APPPATH\Controllers\PenilaianPerusahaan.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\PenilaianPerusahaan->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TST-toko-material-toko-furnitur\\public\\index.php')
+WARNING - 2023-12-16 09:06:23 --> [DEPRECATED] Creation of dynamic property App\Controllers\PenilaianPerusahaan::$auth is deprecated in APPPATH\Controllers\PenilaianPerusahaan.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\PenilaianPerusahaan->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TST-toko-material-toko-furnitur\\public\\index.php')
+CRITICAL - 2023-12-16 09:06:23 --> Undefined property: App\Controllers\PenilaianPerusahaan::$config
+in APPPATH\Controllers\PenilaianPerusahaan.php on line 23.
+ 1 APPPATH\Controllers\PenilaianPerusahaan.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PenilaianPerusahaan::$config', 'D:\\TST-toko-material-toko-furnitur\\app\\Controllers\\PenilaianPerusahaan.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PenilaianPerusahaan->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianPerusahaan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TST-toko-material-toko-furnitur\\public\\index.php')
