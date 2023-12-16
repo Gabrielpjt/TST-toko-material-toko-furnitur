@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col">
             <h1 class="mt-2">Daftar Penilaian</h1>
-            <a href="/PenilaianPelanggan/create" class="btn btn-primary mb-2"></a>
+            <br></br>
             <?php if (session()->getFlashData('pesan')) : ?>
                 <div class="alert alert-success" role='alert'>
                     <?= session()->getFlashdata('pesan') ?>

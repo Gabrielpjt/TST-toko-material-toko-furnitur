@@ -48,6 +48,10 @@ class DataPenilaianKayuDariPerusahaan extends Migration
                 'constraint'     => 255,
                 'unsigned'       => true,
             ],
+            'Tipe_Finishing_Warna'       => [
+                'type'           => 'VARCHAR',
+                'constraint'     => '64',
+            ],
             'Kelebihan'       => [
                 'type'           => 'VARCHAR',
                 'constraint'     => '64',
