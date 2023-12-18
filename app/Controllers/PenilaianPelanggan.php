@@ -38,7 +38,8 @@ class PenilaianPelanggan extends BaseController
     {
         $JSONstring = $this->request->getBody();
         $data = json_decode($JSONstring, true);
-        if (count($data) == 1){
+        $logger = service('logger');
+        if (count($data) == 6){
             $this->model->save([
                 'jenis_kayu' => $data['jenis_kayu'],
                 'merek_kayu' => $data['merek_kayu'],
