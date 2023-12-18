@@ -30,16 +30,18 @@ class Rekomendasi_API extends BaseController
     public function cariRekomendasi()
     {
         // Mengambil data dari body request
-        $requestBody = $this->request->getJSON();
+        $requestBody = $this->request->getBody();
+        $data = json_decode($requestBody, true);
 
+        $logger = service('logger');
         // Mengambil data dari body request untuk pencarian rekomendasi
-        $tingkatTekstur = $requestBody->tingkatTekstur;
-        $tingkatKeperawatan = $requestBody->tingkatKeperawatan;
-        $tingkatKetahanan = $requestBody->tingkatKetahanan;
+        $tingkatTekstur = $data["tingkatTekstur"];
+        $tingkatKeperawatan = $data["tingkatKeperawatan"];
+        $tingkatKetahanan = $data["tingkatKetahanan"];
 
         // Melakukan pencarian berdasarkan kriteria yang diberikan
         $hasilPencarian = $this->model->cariRekomendasikan($tingkatTekstur, $tingkatKeperawatan, $tingkatKetahanan);
-
+        $logger->debug($hasilPencarian);
         // Menyiapkan respons JSON
         return $this->response->setJSON([
             'status' => true,

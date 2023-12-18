@@ -15,10 +15,10 @@ $routes->group('', ['filter' => 'login'], function ($routes) {
    $routes->post('/Rekomendasi/cariRekomendasi', 'Rekomendasi::cariRekomendasi');
    $routes->get('PenilaianPelanggan', 'PenilaianPelanggan::index');
    $routes->get('/form', 'PenilaianPelanggan::form');
-   $routes->post('/PenilaianPelanggan/save', 'PenilaianPelanggan::save');
    $routes->get('/PenilaianPelanggan/(:num)', 'PenilaianPelanggan::detail/$1');
-   
 });
+$routes->post('/PenilaianPelanggan/save', 'PenilaianPelanggan::save');
+
 // Tambahkan namespace untuk kontroler API
 $routes->group('api', ['namespace' => 'App\Controllers\Api'], function ($routes) {
    // Definisikan rute untuk kontroler Rekomendasi
