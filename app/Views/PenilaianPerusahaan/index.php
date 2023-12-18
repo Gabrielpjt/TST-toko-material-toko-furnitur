@@ -73,10 +73,10 @@
                             <td><?= $row['Kelebihan']; ?></td>
                             <td><?= $row['Kekurangan']; ?></td>
                             <td>
-                            <button type="button" data-toggle="modal" data-target="#modalUbah" class="btn btn-sm btn-warning" id="btn-edit" 
+                            <!--<button type="button" data-toggle="modal" data-target="#modalUbah" class="btn btn-sm btn-warning" id="btn-edit" 
                             data-id="<?= $row['id']; ?>" data-Jenis_Kayu="<?= $row['Jenis_Kayu']; ?>" data-Merek_Kayu="<?= $row['Merek_Kayu']; ?>"
                             data-Tingkat_Ketahanan="<?= $row['Tingkat_Ketahanan']; ?>"><i class = "fa fa-edit"></i> </button>
-                            <!-- Perbaikan pada tombol hapus, sesuaikan data-id -->
+                            Perbaikan pada tombol hapus, sesuaikan data-id -->
                             <a href="/PenilaianPerusahaan/hapus/<?= $row['id']; ?>" class="btn btn-primary"><i class="fa fa-trash-alt"></i></a>
                             </td>
                         </tr>

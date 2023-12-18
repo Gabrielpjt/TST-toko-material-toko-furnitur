@@ -40,7 +40,6 @@
                         <th>Tipe Finishing Warna</th>
                         <th>Kelebihan</th>
                         <th>Kekurangan</th>
-                        <th>Opsi</th>
                     </tr>
                 </thead>
                 <tbody>
