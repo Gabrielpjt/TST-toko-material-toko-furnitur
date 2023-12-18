@@ -31,7 +31,7 @@
                             <th scope="row"> <?= $i++; ?></th>
                             <td><?= $p['jenis_kayu']; ?></td>
                             <td><?= $p['merek_kayu']; ?></td>
-                            <td><?= $p['review']; ?></td>
+                            <td><?= $p['penilaian_keseluruhan']; ?></td>
                             <td><?= $p['tekstur']; ?></td>
                             <td><?= $p['ketahanan']; ?></td>
                             <td><?= $p['keperawatan']; ?></td>

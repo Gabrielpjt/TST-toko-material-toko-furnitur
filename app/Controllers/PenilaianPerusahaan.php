@@ -34,8 +34,7 @@ class PenilaianPerusahaan extends BaseController
         ];
 
         // Menggunakan view() dengan array dalam single method call
-        return
-            view('PenilaianPerusahaan/index', $data);
+        return view('template/v_header', $data).view('template/v_sidebar').view('template/v_topbar').view('PenilaianPerusahaan/index').view('template/v_footer');
     }
 
     public function tambah()
