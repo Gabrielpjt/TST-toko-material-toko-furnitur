@@ -3,13 +3,14 @@
 namespace App\Database\Seeds;
 
 use CodeIgniter\Database\Seeder;
+use CodeIgniter\I18n\Time;
 
 class DataPenilaianKayuDariPerusahaan extends Seeder
 {
     public function run()
     {
-        $query = "ALTER TABLE data_penilaian_kayu_dari_perusahaan AUTO_INCREMENT = 1";
-        $this->db->query($query);
+        // Reset AUTO_INCREMENT pada tabel
+        $this->db->query("ALTER TABLE data_penilaian_kayu_dari_perusahaan AUTO_INCREMENT = 1");
 
         $jenis_kayu = ['oak', 'maple', 'ash', 'teak', 'birch', 'cedar', 'mahogany', 'pine', 'cherry', 'walnut'];
         $merek_kayu = ['Bridgestone', 'Ping', 'Mizuno', 'Wilson', 'Srixon', 'Callaway', 'Cobra', 'Adams', 'TaylorMade', 'Titleist'];
@@ -37,15 +38,11 @@ class DataPenilaianKayuDariPerusahaan extends Seeder
                 'Tipe_Finishing_Warna' => $random_tipe_finishing,
                 'Kelebihan' => $random_kelebihan,
                 'Kekurangan' => $random_kekurangan
+                
             ];
-
-            foreach ($data as $key => $value) {
-                $this->db->table('data_penilaian_kayu_dari_perusahaan')->insert($value);
-            }
         }
-        
-    }
-            
-        
-}
 
+        // Insert semua data sekaligus setelah perulangan selesai
+        $this->db->table('data_penilaian_kayu_dari_perusahaan')->insertBatch($data);
+    }
+}
