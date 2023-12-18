@@ -33,9 +33,9 @@ class M_PenilaianPerusahaan extends Model {
             if (!empty($tingkatTekstur) && !empty($tingkatKeperawatan) && !empty($tingkatKetahanan)) {
                 // Lakukan query sesuai dengan kriteria pencarian
                 return $this->db->table($this->table)
-                                ->where('Tingkat_Tekstur', $tingkatTekstur)
-                                ->where('Tingkat_Keperawatan', $tingkatKeperawatan)
-                                ->where('Tingkat_Ketahanan', $tingkatKetahanan)
+                                ->where('Tingkat_Tekstur >=', $tingkatTekstur)
+                                ->where('Tingkat_Keperawatan >=', $tingkatKeperawatan)
+                                ->where('Tingkat_Ketahanan >=', $tingkatKetahanan)
                                 ->get()
                                 ->getResultArray();
             } else {

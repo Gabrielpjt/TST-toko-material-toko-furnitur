@@ -80,7 +80,7 @@
                             data-id="<?= $row['id']; ?>" data-Jenis_Kayu="<?= $row['Jenis_Kayu']; ?>" data-Merek_Kayu="<?= $row['Merek_Kayu']; ?>"
                             data-Tingkat_Ketahanan="<?= $row['Tingkat_Ketahanan']; ?>"><i class = "fa fa-edit"></i> </button>
                             Perbaikan pada tombol hapus, sesuaikan data-id -->
-                                <a href="/PenilaianPerusahaan/hapus/<?= $row['id']; ?>" class="btn btn-primary"><i class="fa fa-trash-alt"></i></a>
+                                <a href="/PenilaianPerusahaan/hapus/<?= $row['id']; ?>" class="btn btn-primary"><img alt="delete" src="/trash-small.png"/></a>
                             </td>
                         </tr>
                     <?php endforeach; ?>
