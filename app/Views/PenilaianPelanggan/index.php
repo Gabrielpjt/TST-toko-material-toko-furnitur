@@ -21,8 +21,7 @@
                         <th scope="col">Tekstur</th>
                         <th scope="col">Ketahanan</th>
                         <th scope="col">Keperawatan</th>
-                        <th scope="col">Kelebihan</th>
-                        <th scope="col">Kekurangan</th>
+
                     </tr>
                 </thead>
                 <tbody>
@@ -32,12 +31,10 @@
                             <th scope="row"> <?= $i++; ?></th>
                             <td><?= $p['jenis_kayu']; ?></td>
                             <td><?= $p['merek_kayu']; ?></td>
-                            <td><?= $p['penilaian_keseluruhan']; ?></td>
+                            <td><?= $p['review']; ?></td>
                             <td><?= $p['tekstur']; ?></td>
                             <td><?= $p['ketahanan']; ?></td>
                             <td><?= $p['keperawatan']; ?></td>
-                            <td><?= $p['kelebihan']; ?></td>
-                            <td><?= $p['kekurangan']; ?></td>
                         </tr>
                     <?php endforeach; ?>
 
