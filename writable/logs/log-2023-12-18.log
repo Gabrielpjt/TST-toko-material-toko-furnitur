@@ -1594,3 +1594,608 @@ in APPPATH\Views\PenilaianPelanggan\index.php on line 35.
 INFO - 2023-12-18 08:43:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-12-18 08:43:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-12-18 08:44:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 09:52:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 09:52:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 09:52:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 09:52:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 10:44:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 10:44:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 10:44:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 10:45:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 10:45:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-12-18 10:45:31 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$session is deprecated in APPPATH\Controllers\Home.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TST-toko-material-toko-furnitur\\public\\index.php')
+WARNING - 2023-12-18 10:45:31 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$auth is deprecated in APPPATH\Controllers\Home.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TST-toko-material-toko-furnitur\\public\\index.php')
+CRITICAL - 2023-12-18 10:45:31 --> App\Controllers\Home::index(): Return value must be of type string, CodeIgniter\HTTP\RedirectResponse returned
+in APPPATH\Controllers\Home.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TST-toko-material-toko-furnitur\\public\\index.php')
+INFO - 2023-12-18 10:45:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-12-18 10:45:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\Rekomendasi::$session is deprecated in APPPATH\Controllers\Rekomendasi.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Rekomendasi->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TST-toko-material-toko-furnitur\\public\\index.php')
+WARNING - 2023-12-18 10:45:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\Rekomendasi::$auth is deprecated in APPPATH\Controllers\Rekomendasi.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Rekomendasi->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TST-toko-material-toko-furnitur\\public\\index.php')
+INFO - 2023-12-18 10:45:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-12-18 10:45:59 --> [DEPRECATED] Creation of dynamic property App\Controllers\Rekomendasi::$session is deprecated in APPPATH\Controllers\Rekomendasi.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Rekomendasi->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TST-toko-material-toko-furnitur\\public\\index.php')
+WARNING - 2023-12-18 10:45:59 --> [DEPRECATED] Creation of dynamic property App\Controllers\Rekomendasi::$auth is deprecated in APPPATH\Controllers\Rekomendasi.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Rekomendasi->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TST-toko-material-toko-furnitur\\public\\index.php')
+INFO - 2023-12-18 10:45:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-12-18 10:45:59 --> [DEPRECATED] Creation of dynamic property App\Controllers\Rekomendasi::$session is deprecated in APPPATH\Controllers\Rekomendasi.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Rekomendasi->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TST-toko-material-toko-furnitur\\public\\index.php')
+WARNING - 2023-12-18 10:45:59 --> [DEPRECATED] Creation of dynamic property App\Controllers\Rekomendasi::$auth is deprecated in APPPATH\Controllers\Rekomendasi.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Rekomendasi->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TST-toko-material-toko-furnitur\\public\\index.php')
+CRITICAL - 2023-12-18 10:45:59 --> Cannot access offset of type string on string
+in APPPATH\Views\RekomendasiPelanggan\index.php on line 49.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('RekomendasiPelanggan/index', [], true)
+ 4 APPPATH\Controllers\Rekomendasi.php(30): view('RekomendasiPelanggan/index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Rekomendasi->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rekomendasi))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TST-toko-material-toko-furnitur\\public\\index.php')
+INFO - 2023-12-18 10:46:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-12-18 10:46:07 --> [DEPRECATED] Creation of dynamic property App\Controllers\Rekomendasi::$session is deprecated in APPPATH\Controllers\Rekomendasi.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Rekomendasi->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TST-toko-material-toko-furnitur\\public\\index.php')
+WARNING - 2023-12-18 10:46:07 --> [DEPRECATED] Creation of dynamic property App\Controllers\Rekomendasi::$auth is deprecated in APPPATH\Controllers\Rekomendasi.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Rekomendasi->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TST-toko-material-toko-furnitur\\public\\index.php')
+INFO - 2023-12-18 10:46:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-18 10:46:14 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 D:\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'tsttokomaterial', 3308, '', 0)
+#1 D:\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\TST-toko-material-toko-furnitur\system\Database\BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\TST-toko-material-toko-furnitur\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\TST-toko-material-toko-furnitur\system\BaseModel.php(623): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\TST-toko-material-toko-furnitur\app\Models\M_PenilaianPelanggan.php(16): CodeIgniter\BaseModel->findAll()
+#7 D:\TST-toko-material-toko-furnitur\app\Controllers\PenilaianPelanggan.php(20): App\Models\M_PenilaianPelanggan->getPenilaian()
+#8 D:\TST-toko-material-toko-furnitur\system\CodeIgniter.php(942): App\Controllers\PenilaianPelanggan->index()
+#9 D:\TST-toko-material-toko-furnitur\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianPelanggan))
+#10 D:\TST-toko-material-toko-furnitur\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\TST-toko-material-toko-furnitur\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\TST-toko-material-toko-furnitur\system\Commands\Server\rewrite.php(47): require_once('D:\\TST-toko-mat...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\TST-toko-material-toko-furnitur\system\Database\BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\TST-toko-material-toko-furnitur\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\TST-toko-material-toko-furnitur\system\BaseModel.php(623): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\TST-toko-material-toko-furnitur\app\Models\M_PenilaianPelanggan.php(16): CodeIgniter\BaseModel->findAll()
+#6 D:\TST-toko-material-toko-furnitur\app\Controllers\PenilaianPelanggan.php(20): App\Models\M_PenilaianPelanggan->getPenilaian()
+#7 D:\TST-toko-material-toko-furnitur\system\CodeIgniter.php(942): App\Controllers\PenilaianPelanggan->index()
+#8 D:\TST-toko-material-toko-furnitur\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianPelanggan))
+#9 D:\TST-toko-material-toko-furnitur\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\TST-toko-material-toko-furnitur\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\TST-toko-material-toko-furnitur\system\Commands\Server\rewrite.php(47): require_once('D:\\TST-toko-mat...')
+#12 {main}
+CRITICAL - 2023-12-18 10:46:14 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `penilaian_pelanggan`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(623): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\M_PenilaianPelanggan.php(16): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\PenilaianPelanggan.php(20): App\Models\M_PenilaianPelanggan->getPenilaian()
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PenilaianPelanggan->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianPelanggan))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TST-toko-material-toko-furnitur\\public\\index.php')
+ERROR - 2023-12-18 10:46:18 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 D:\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'tsttokomaterial', 3308, '', 0)
+#1 D:\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\TST-toko-material-toko-furnitur\system\Database\BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\TST-toko-material-toko-furnitur\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\TST-toko-material-toko-furnitur\system\BaseModel.php(623): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\TST-toko-material-toko-furnitur\app\Models\M_PenilaianPelanggan.php(16): CodeIgniter\BaseModel->findAll()
+#7 D:\TST-toko-material-toko-furnitur\app\Controllers\PenilaianPelanggan.php(20): App\Models\M_PenilaianPelanggan->getPenilaian()
+#8 D:\TST-toko-material-toko-furnitur\system\CodeIgniter.php(942): App\Controllers\PenilaianPelanggan->index()
+#9 D:\TST-toko-material-toko-furnitur\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianPelanggan))
+#10 D:\TST-toko-material-toko-furnitur\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\TST-toko-material-toko-furnitur\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\TST-toko-material-toko-furnitur\system\Commands\Server\rewrite.php(47): require_once('D:\\TST-toko-mat...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\TST-toko-material-toko-furnitur\system\Database\BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\TST-toko-material-toko-furnitur\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\TST-toko-material-toko-furnitur\system\BaseModel.php(623): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\TST-toko-material-toko-furnitur\app\Models\M_PenilaianPelanggan.php(16): CodeIgniter\BaseModel->findAll()
+#6 D:\TST-toko-material-toko-furnitur\app\Controllers\PenilaianPelanggan.php(20): App\Models\M_PenilaianPelanggan->getPenilaian()
+#7 D:\TST-toko-material-toko-furnitur\system\CodeIgniter.php(942): App\Controllers\PenilaianPelanggan->index()
+#8 D:\TST-toko-material-toko-furnitur\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianPelanggan))
+#9 D:\TST-toko-material-toko-furnitur\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\TST-toko-material-toko-furnitur\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\TST-toko-material-toko-furnitur\system\Commands\Server\rewrite.php(47): require_once('D:\\TST-toko-mat...')
+#12 {main}
+CRITICAL - 2023-12-18 10:46:18 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `penilaian_pelanggan`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(623): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\M_PenilaianPelanggan.php(16): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\PenilaianPelanggan.php(20): App\Models\M_PenilaianPelanggan->getPenilaian()
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PenilaianPelanggan->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianPelanggan))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TST-toko-material-toko-furnitur\\public\\index.php')
+ERROR - 2023-12-18 10:46:22 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 D:\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'tsttokomaterial', 3308, '', 0)
+#1 D:\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\TST-toko-material-toko-furnitur\system\Database\BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\TST-toko-material-toko-furnitur\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\TST-toko-material-toko-furnitur\system\BaseModel.php(623): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\TST-toko-material-toko-furnitur\app\Models\M_PenilaianPelanggan.php(16): CodeIgniter\BaseModel->findAll()
+#7 D:\TST-toko-material-toko-furnitur\app\Controllers\PenilaianPelanggan.php(20): App\Models\M_PenilaianPelanggan->getPenilaian()
+#8 D:\TST-toko-material-toko-furnitur\system\CodeIgniter.php(942): App\Controllers\PenilaianPelanggan->index()
+#9 D:\TST-toko-material-toko-furnitur\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianPelanggan))
+#10 D:\TST-toko-material-toko-furnitur\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\TST-toko-material-toko-furnitur\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\TST-toko-material-toko-furnitur\system\Commands\Server\rewrite.php(47): require_once('D:\\TST-toko-mat...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\TST-toko-material-toko-furnitur\system\Database\BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\TST-toko-material-toko-furnitur\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\TST-toko-material-toko-furnitur\system\BaseModel.php(623): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\TST-toko-material-toko-furnitur\app\Models\M_PenilaianPelanggan.php(16): CodeIgniter\BaseModel->findAll()
+#6 D:\TST-toko-material-toko-furnitur\app\Controllers\PenilaianPelanggan.php(20): App\Models\M_PenilaianPelanggan->getPenilaian()
+#7 D:\TST-toko-material-toko-furnitur\system\CodeIgniter.php(942): App\Controllers\PenilaianPelanggan->index()
+#8 D:\TST-toko-material-toko-furnitur\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianPelanggan))
+#9 D:\TST-toko-material-toko-furnitur\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\TST-toko-material-toko-furnitur\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\TST-toko-material-toko-furnitur\system\Commands\Server\rewrite.php(47): require_once('D:\\TST-toko-mat...')
+#12 {main}
+CRITICAL - 2023-12-18 10:46:22 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `penilaian_pelanggan`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(623): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\M_PenilaianPelanggan.php(16): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\PenilaianPelanggan.php(20): App\Models\M_PenilaianPelanggan->getPenilaian()
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PenilaianPelanggan->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianPelanggan))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TST-toko-material-toko-furnitur\\public\\index.php')
+INFO - 2023-12-18 10:46:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-18 10:46:39 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 D:\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'tsttokomaterial', 3306, '', 0)
+#1 D:\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\TST-toko-material-toko-furnitur\system\Database\BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\TST-toko-material-toko-furnitur\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\TST-toko-material-toko-furnitur\system\BaseModel.php(623): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\TST-toko-material-toko-furnitur\app\Models\M_PenilaianPelanggan.php(16): CodeIgniter\BaseModel->findAll()
+#7 D:\TST-toko-material-toko-furnitur\app\Controllers\PenilaianPelanggan.php(20): App\Models\M_PenilaianPelanggan->getPenilaian()
+#8 D:\TST-toko-material-toko-furnitur\system\CodeIgniter.php(942): App\Controllers\PenilaianPelanggan->index()
+#9 D:\TST-toko-material-toko-furnitur\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianPelanggan))
+#10 D:\TST-toko-material-toko-furnitur\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\TST-toko-material-toko-furnitur\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\TST-toko-material-toko-furnitur\system\Commands\Server\rewrite.php(47): require_once('D:\\TST-toko-mat...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\TST-toko-material-toko-furnitur\system\Database\BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\TST-toko-material-toko-furnitur\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\TST-toko-material-toko-furnitur\system\BaseModel.php(623): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\TST-toko-material-toko-furnitur\app\Models\M_PenilaianPelanggan.php(16): CodeIgniter\BaseModel->findAll()
+#6 D:\TST-toko-material-toko-furnitur\app\Controllers\PenilaianPelanggan.php(20): App\Models\M_PenilaianPelanggan->getPenilaian()
+#7 D:\TST-toko-material-toko-furnitur\system\CodeIgniter.php(942): App\Controllers\PenilaianPelanggan->index()
+#8 D:\TST-toko-material-toko-furnitur\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianPelanggan))
+#9 D:\TST-toko-material-toko-furnitur\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\TST-toko-material-toko-furnitur\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\TST-toko-material-toko-furnitur\system\Commands\Server\rewrite.php(47): require_once('D:\\TST-toko-mat...')
+#12 {main}
+CRITICAL - 2023-12-18 10:46:39 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `penilaian_pelanggan`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(623): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\M_PenilaianPelanggan.php(16): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\PenilaianPelanggan.php(20): App\Models\M_PenilaianPelanggan->getPenilaian()
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PenilaianPelanggan->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianPelanggan))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TST-toko-material-toko-furnitur\\public\\index.php')
+ERROR - 2023-12-18 10:46:58 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 D:\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'tsttokomaterial', 3306, '', 0)
+#1 D:\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\TST-toko-material-toko-furnitur\system\Database\BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\TST-toko-material-toko-furnitur\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\TST-toko-material-toko-furnitur\system\BaseModel.php(623): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\TST-toko-material-toko-furnitur\app\Models\M_PenilaianPelanggan.php(16): CodeIgniter\BaseModel->findAll()
+#7 D:\TST-toko-material-toko-furnitur\app\Controllers\PenilaianPelanggan.php(20): App\Models\M_PenilaianPelanggan->getPenilaian()
+#8 D:\TST-toko-material-toko-furnitur\system\CodeIgniter.php(942): App\Controllers\PenilaianPelanggan->index()
+#9 D:\TST-toko-material-toko-furnitur\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianPelanggan))
+#10 D:\TST-toko-material-toko-furnitur\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\TST-toko-material-toko-furnitur\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\TST-toko-material-toko-furnitur\system\Commands\Server\rewrite.php(47): require_once('D:\\TST-toko-mat...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\TST-toko-material-toko-furnitur\system\Database\BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\TST-toko-material-toko-furnitur\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\TST-toko-material-toko-furnitur\system\BaseModel.php(623): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\TST-toko-material-toko-furnitur\app\Models\M_PenilaianPelanggan.php(16): CodeIgniter\BaseModel->findAll()
+#6 D:\TST-toko-material-toko-furnitur\app\Controllers\PenilaianPelanggan.php(20): App\Models\M_PenilaianPelanggan->getPenilaian()
+#7 D:\TST-toko-material-toko-furnitur\system\CodeIgniter.php(942): App\Controllers\PenilaianPelanggan->index()
+#8 D:\TST-toko-material-toko-furnitur\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianPelanggan))
+#9 D:\TST-toko-material-toko-furnitur\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\TST-toko-material-toko-furnitur\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\TST-toko-material-toko-furnitur\system\Commands\Server\rewrite.php(47): require_once('D:\\TST-toko-mat...')
+#12 {main}
+CRITICAL - 2023-12-18 10:46:58 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `penilaian_pelanggan`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(623): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\M_PenilaianPelanggan.php(16): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\PenilaianPelanggan.php(20): App\Models\M_PenilaianPelanggan->getPenilaian()
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PenilaianPelanggan->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianPelanggan))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TST-toko-material-toko-furnitur\\public\\index.php')
+ERROR - 2023-12-18 10:47:04 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 D:\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'tsttokomaterial', 3306, '', 0)
+#1 D:\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\TST-toko-material-toko-furnitur\system\Database\BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\TST-toko-material-toko-furnitur\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\TST-toko-material-toko-furnitur\system\BaseModel.php(623): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\TST-toko-material-toko-furnitur\app\Models\M_PenilaianPelanggan.php(16): CodeIgniter\BaseModel->findAll()
+#7 D:\TST-toko-material-toko-furnitur\app\Controllers\PenilaianPelanggan.php(20): App\Models\M_PenilaianPelanggan->getPenilaian()
+#8 D:\TST-toko-material-toko-furnitur\system\CodeIgniter.php(942): App\Controllers\PenilaianPelanggan->index()
+#9 D:\TST-toko-material-toko-furnitur\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianPelanggan))
+#10 D:\TST-toko-material-toko-furnitur\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\TST-toko-material-toko-furnitur\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\TST-toko-material-toko-furnitur\system\Commands\Server\rewrite.php(47): require_once('D:\\TST-toko-mat...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\TST-toko-material-toko-furnitur\system\Database\BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\TST-toko-material-toko-furnitur\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\TST-toko-material-toko-furnitur\system\BaseModel.php(623): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\TST-toko-material-toko-furnitur\app\Models\M_PenilaianPelanggan.php(16): CodeIgniter\BaseModel->findAll()
+#6 D:\TST-toko-material-toko-furnitur\app\Controllers\PenilaianPelanggan.php(20): App\Models\M_PenilaianPelanggan->getPenilaian()
+#7 D:\TST-toko-material-toko-furnitur\system\CodeIgniter.php(942): App\Controllers\PenilaianPelanggan->index()
+#8 D:\TST-toko-material-toko-furnitur\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianPelanggan))
+#9 D:\TST-toko-material-toko-furnitur\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\TST-toko-material-toko-furnitur\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\TST-toko-material-toko-furnitur\system\Commands\Server\rewrite.php(47): require_once('D:\\TST-toko-mat...')
+#12 {main}
+CRITICAL - 2023-12-18 10:47:04 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `penilaian_pelanggan`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(623): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\M_PenilaianPelanggan.php(16): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\PenilaianPelanggan.php(20): App\Models\M_PenilaianPelanggan->getPenilaian()
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PenilaianPelanggan->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianPelanggan))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TST-toko-material-toko-furnitur\\public\\index.php')
+INFO - 2023-12-18 10:47:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-18 10:47:15 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 D:\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'tsttokomaterial', 3306, '', 0)
+#1 D:\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\TST-toko-material-toko-furnitur\system\Database\BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\TST-toko-material-toko-furnitur\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\TST-toko-material-toko-furnitur\system\BaseModel.php(623): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\TST-toko-material-toko-furnitur\app\Models\M_PenilaianPelanggan.php(16): CodeIgniter\BaseModel->findAll()
+#7 D:\TST-toko-material-toko-furnitur\app\Controllers\PenilaianPelanggan.php(20): App\Models\M_PenilaianPelanggan->getPenilaian()
+#8 D:\TST-toko-material-toko-furnitur\system\CodeIgniter.php(942): App\Controllers\PenilaianPelanggan->index()
+#9 D:\TST-toko-material-toko-furnitur\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianPelanggan))
+#10 D:\TST-toko-material-toko-furnitur\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\TST-toko-material-toko-furnitur\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\TST-toko-material-toko-furnitur\system\Commands\Server\rewrite.php(47): require_once('D:\\TST-toko-mat...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\TST-toko-material-toko-furnitur\system\Database\BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\TST-toko-material-toko-furnitur\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\TST-toko-material-toko-furnitur\system\BaseModel.php(623): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\TST-toko-material-toko-furnitur\app\Models\M_PenilaianPelanggan.php(16): CodeIgniter\BaseModel->findAll()
+#6 D:\TST-toko-material-toko-furnitur\app\Controllers\PenilaianPelanggan.php(20): App\Models\M_PenilaianPelanggan->getPenilaian()
+#7 D:\TST-toko-material-toko-furnitur\system\CodeIgniter.php(942): App\Controllers\PenilaianPelanggan->index()
+#8 D:\TST-toko-material-toko-furnitur\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianPelanggan))
+#9 D:\TST-toko-material-toko-furnitur\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\TST-toko-material-toko-furnitur\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\TST-toko-material-toko-furnitur\system\Commands\Server\rewrite.php(47): require_once('D:\\TST-toko-mat...')
+#12 {main}
+CRITICAL - 2023-12-18 10:47:15 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `penilaian_pelanggan`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(623): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\M_PenilaianPelanggan.php(16): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\PenilaianPelanggan.php(20): App\Models\M_PenilaianPelanggan->getPenilaian()
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PenilaianPelanggan->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianPelanggan))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TST-toko-material-toko-furnitur\\public\\index.php')
+INFO - 2023-12-18 10:47:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 11:10:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 11:11:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-12-18 11:11:50 --> [DEPRECATED] Creation of dynamic property App\Controllers\Rekomendasi::$session is deprecated in APPPATH\Controllers\Rekomendasi.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Rekomendasi->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TST-toko-material-toko-furnitur\\public\\index.php')
+WARNING - 2023-12-18 11:11:50 --> [DEPRECATED] Creation of dynamic property App\Controllers\Rekomendasi::$auth is deprecated in APPPATH\Controllers\Rekomendasi.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Rekomendasi->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TST-toko-material-toko-furnitur\\public\\index.php')
+INFO - 2023-12-18 11:11:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-12-18 11:11:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\PenilaianPerusahaan::$session is deprecated in APPPATH\Controllers\PenilaianPerusahaan.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\PenilaianPerusahaan->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TST-toko-material-toko-furnitur\\public\\index.php')
+WARNING - 2023-12-18 11:11:51 --> [DEPRECATED] Creation of dynamic property App\Controllers\PenilaianPerusahaan::$auth is deprecated in APPPATH\Controllers\PenilaianPerusahaan.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\PenilaianPerusahaan->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TST-toko-material-toko-furnitur\\public\\index.php')
+CRITICAL - 2023-12-18 11:11:51 --> Undefined property: App\Controllers\PenilaianPerusahaan::$config
+in APPPATH\Controllers\PenilaianPerusahaan.php on line 24.
+ 1 APPPATH\Controllers\PenilaianPerusahaan.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PenilaianPerusahaan::$config', 'D:\\TST-toko-material-toko-furnitur\\app\\Controllers\\PenilaianPerusahaan.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PenilaianPerusahaan->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianPerusahaan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TST-toko-material-toko-furnitur\\public\\index.php')
+INFO - 2023-12-18 11:12:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-12-18 11:12:12 --> [DEPRECATED] Creation of dynamic property App\Controllers\PenilaianPerusahaan::$session is deprecated in APPPATH\Controllers\PenilaianPerusahaan.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\PenilaianPerusahaan->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TST-toko-material-toko-furnitur\\public\\index.php')
+WARNING - 2023-12-18 11:12:12 --> [DEPRECATED] Creation of dynamic property App\Controllers\PenilaianPerusahaan::$auth is deprecated in APPPATH\Controllers\PenilaianPerusahaan.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\PenilaianPerusahaan->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TST-toko-material-toko-furnitur\\public\\index.php')
+CRITICAL - 2023-12-18 11:12:12 --> Undefined property: App\Controllers\PenilaianPerusahaan::$config
+in APPPATH\Controllers\PenilaianPerusahaan.php on line 24.
+ 1 APPPATH\Controllers\PenilaianPerusahaan.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PenilaianPerusahaan::$config', 'D:\\TST-toko-material-toko-furnitur\\app\\Controllers\\PenilaianPerusahaan.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PenilaianPerusahaan->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianPerusahaan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TST-toko-material-toko-furnitur\\public\\index.php')
+INFO - 2023-12-18 11:12:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-12-18 11:12:13 --> [DEPRECATED] Creation of dynamic property App\Controllers\PenilaianPerusahaan::$session is deprecated in APPPATH\Controllers\PenilaianPerusahaan.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\PenilaianPerusahaan->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TST-toko-material-toko-furnitur\\public\\index.php')
+WARNING - 2023-12-18 11:12:13 --> [DEPRECATED] Creation of dynamic property App\Controllers\PenilaianPerusahaan::$auth is deprecated in APPPATH\Controllers\PenilaianPerusahaan.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\PenilaianPerusahaan->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TST-toko-material-toko-furnitur\\public\\index.php')
+CRITICAL - 2023-12-18 11:12:13 --> Undefined property: App\Controllers\PenilaianPerusahaan::$config
+in APPPATH\Controllers\PenilaianPerusahaan.php on line 24.
+ 1 APPPATH\Controllers\PenilaianPerusahaan.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\PenilaianPerusahaan::$config', 'D:\\TST-toko-material-toko-furnitur\\app\\Controllers\\PenilaianPerusahaan.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\PenilaianPerusahaan->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianPerusahaan))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TST-toko-material-toko-furnitur\\public\\index.php')
+INFO - 2023-12-18 11:12:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 11:12:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 11:14:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 11:14:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 11:14:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-12-18 11:14:46 --> [DEPRECATED] Creation of dynamic property App\Controllers\Rekomendasi::$session is deprecated in APPPATH\Controllers\Rekomendasi.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Rekomendasi->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TST-toko-material-toko-furnitur\\public\\index.php')
+WARNING - 2023-12-18 11:14:46 --> [DEPRECATED] Creation of dynamic property App\Controllers\Rekomendasi::$auth is deprecated in APPPATH\Controllers\Rekomendasi.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Rekomendasi->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TST-toko-material-toko-furnitur\\public\\index.php')
+INFO - 2023-12-18 11:14:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-12-18 11:14:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\Rekomendasi::$session is deprecated in APPPATH\Controllers\Rekomendasi.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Rekomendasi->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TST-toko-material-toko-furnitur\\public\\index.php')
+WARNING - 2023-12-18 11:14:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\Rekomendasi::$auth is deprecated in APPPATH\Controllers\Rekomendasi.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Rekomendasi->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TST-toko-material-toko-furnitur\\public\\index.php')
+INFO - 2023-12-18 11:14:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-12-18 11:14:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\Rekomendasi::$session is deprecated in APPPATH\Controllers\Rekomendasi.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Rekomendasi->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TST-toko-material-toko-furnitur\\public\\index.php')
+WARNING - 2023-12-18 11:14:52 --> [DEPRECATED] Creation of dynamic property App\Controllers\Rekomendasi::$auth is deprecated in APPPATH\Controllers\Rekomendasi.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Rekomendasi->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TST-toko-material-toko-furnitur\\public\\index.php')
+CRITICAL - 2023-12-18 11:14:52 --> Cannot access offset of type string on string
+in APPPATH\Views\RekomendasiPelanggan\index.php on line 49.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('RekomendasiPelanggan/index', [], true)
+ 4 APPPATH\Controllers\Rekomendasi.php(30): view('RekomendasiPelanggan/index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Rekomendasi->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rekomendasi))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TST-toko-material-toko-furnitur\\public\\index.php')
+INFO - 2023-12-18 11:14:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-12-18 11:14:57 --> [DEPRECATED] Creation of dynamic property App\Controllers\Rekomendasi::$session is deprecated in APPPATH\Controllers\Rekomendasi.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Rekomendasi->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TST-toko-material-toko-furnitur\\public\\index.php')
+WARNING - 2023-12-18 11:14:57 --> [DEPRECATED] Creation of dynamic property App\Controllers\Rekomendasi::$auth is deprecated in APPPATH\Controllers\Rekomendasi.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Rekomendasi->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TST-toko-material-toko-furnitur\\public\\index.php')
+INFO - 2023-12-18 11:15:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-12-18 11:15:01 --> [DEPRECATED] Creation of dynamic property App\Controllers\Rekomendasi::$session is deprecated in APPPATH\Controllers\Rekomendasi.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Rekomendasi->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TST-toko-material-toko-furnitur\\public\\index.php')
+WARNING - 2023-12-18 11:15:01 --> [DEPRECATED] Creation of dynamic property App\Controllers\Rekomendasi::$auth is deprecated in APPPATH\Controllers\Rekomendasi.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Rekomendasi->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TST-toko-material-toko-furnitur\\public\\index.php')
+INFO - 2023-12-18 11:15:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-12-18 11:15:01 --> [DEPRECATED] Creation of dynamic property App\Controllers\Rekomendasi::$session is deprecated in APPPATH\Controllers\Rekomendasi.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Rekomendasi->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TST-toko-material-toko-furnitur\\public\\index.php')
+WARNING - 2023-12-18 11:15:01 --> [DEPRECATED] Creation of dynamic property App\Controllers\Rekomendasi::$auth is deprecated in APPPATH\Controllers\Rekomendasi.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Rekomendasi->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TST-toko-material-toko-furnitur\\public\\index.php')
+CRITICAL - 2023-12-18 11:15:01 --> Cannot access offset of type string on string
+in APPPATH\Views\RekomendasiPelanggan\index.php on line 49.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('RekomendasiPelanggan/index', [], true)
+ 4 APPPATH\Controllers\Rekomendasi.php(30): view('RekomendasiPelanggan/index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Rekomendasi->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rekomendasi))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\TST-toko-material-toko-furnitur\\public\\index.php')
