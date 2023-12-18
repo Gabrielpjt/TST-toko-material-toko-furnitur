@@ -17,4 +17,18 @@ $routes->group('', ['filter' => 'login'], function ($routes) {
    $routes->get('/form', 'PenilaianPelanggan::form');
    $routes->post('/PenilaianPelanggan/save', 'PenilaianPelanggan::save');
    $routes->get('/PenilaianPelanggan/(:num)', 'PenilaianPelanggan::detail/$1');
+   
 });
+// Tambahkan namespace untuk kontroler API
+$routes->group('api', ['namespace' => 'App\Controllers\Api'], function ($routes) {
+   // Definisikan rute untuk kontroler Rekomendasi
+   $routes->get('rekomendasi', 'Rekomendasi_API::index');
+   $routes->post('rekomendasi/cari', 'Rekomendasi_API::cariRekomendasi');
+   // Tambahkan rute lain jika diperlukan
+});
+
+
+
+// Rute lainnya...
+
+
