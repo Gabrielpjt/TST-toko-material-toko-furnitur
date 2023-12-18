@@ -1594,3 +1594,275 @@ in APPPATH\Views\PenilaianPelanggan\index.php on line 35.
 INFO - 2023-12-18 08:43:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-12-18 08:43:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-12-18 08:44:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-18 09:36:24 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'tsttokomaterial' in C:\Kuliah ITB\Semester 5\TST\test material\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\Kuliah ITB\Semester 5\TST\test material\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'tsttokomaterial', 3314, '', 0)
+#1 C:\Kuliah ITB\Semester 5\TST\test material\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Kuliah ITB\Semester 5\TST\test material\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Kuliah ITB\Semester 5\TST\test material\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(1410): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 C:\Kuliah ITB\Semester 5\TST\test material\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(1429): CodeIgniter\Database\BaseConnection->listTables()
+#5 C:\Kuliah ITB\Semester 5\TST\test material\TST-toko-material-toko-furnitur\system\Database\MigrationRunner.php(764): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 C:\Kuliah ITB\Semester 5\TST\test material\TST-toko-material-toko-furnitur\system\Database\MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 C:\Kuliah ITB\Semester 5\TST\test material\TST-toko-material-toko-furnitur\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Kuliah ITB\Semester 5\TST\test material\TST-toko-material-toko-furnitur\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Kuliah ITB\Semester 5\TST\test material\TST-toko-material-toko-furnitur\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Kuliah ITB\Semester 5\TST\test material\TST-toko-material-toko-furnitur\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'tsttokomaterial' in C:\Kuliah ITB\Semester 5\TST\test material\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\Kuliah ITB\Semester 5\TST\test material\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Kuliah ITB\Semester 5\TST\test material\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Kuliah ITB\Semester 5\TST\test material\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(1410): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 C:\Kuliah ITB\Semester 5\TST\test material\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(1429): CodeIgniter\Database\BaseConnection->listTables()
+#4 C:\Kuliah ITB\Semester 5\TST\test material\TST-toko-material-toko-furnitur\system\Database\MigrationRunner.php(764): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 C:\Kuliah ITB\Semester 5\TST\test material\TST-toko-material-toko-furnitur\system\Database\MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 C:\Kuliah ITB\Semester 5\TST\test material\TST-toko-material-toko-furnitur\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 C:\Kuliah ITB\Semester 5\TST\test material\TST-toko-material-toko-furnitur\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 C:\Kuliah ITB\Semester 5\TST\test material\TST-toko-material-toko-furnitur\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 C:\Kuliah ITB\Semester 5\TST\test material\TST-toko-material-toko-furnitur\spark(102): CodeIgniter\CLI\Console->run()
+#10 {main}
+ERROR - 2023-12-18 09:38:20 --> mysqli_sql_exception: Table 'users' already exists in C:\Kuliah ITB\Semester 5\TST\test material\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Kuliah ITB\Semester 5\TST\test material\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php(306): mysqli->query('CREATE TABLE `u...', 0)
+#1 C:\Kuliah ITB\Semester 5\TST\test material\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `u...')
+#2 C:\Kuliah ITB\Semester 5\TST\test material\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `u...')
+#3 C:\Kuliah ITB\Semester 5\TST\test material\TST-toko-material-toko-furnitur\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `u...')
+#4 C:\Kuliah ITB\Semester 5\TST\test material\TST-toko-material-toko-furnitur\app\Database\Migrations\2023-12-16-113248_AuthLogins.php(94): CodeIgniter\Database\Forge->createTable('users')
+#5 C:\Kuliah ITB\Semester 5\TST\test material\TST-toko-material-toko-furnitur\system\Database\MigrationRunner.php(873): App\Database\Migrations\AuthLogins->up()
+#6 C:\Kuliah ITB\Semester 5\TST\test material\TST-toko-material-toko-furnitur\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\Kuliah ITB\Semester 5\TST\test material\TST-toko-material-toko-furnitur\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\Kuliah ITB\Semester 5\TST\test material\TST-toko-material-toko-furnitur\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\Kuliah ITB\Semester 5\TST\test material\TST-toko-material-toko-furnitur\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\Kuliah ITB\Semester 5\TST\test material\TST-toko-material-toko-furnitur\spark(102): CodeIgniter\CLI\Console->run()
+#11 {main}
+INFO - 2023-12-18 09:39:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 09:39:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 09:39:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 09:40:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 09:40:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 09:40:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 09:40:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-12-18 09:40:29 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$session is deprecated in APPPATH\Controllers\Home.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Kuliah ITB\\Semester 5\\TST\\test material\\TST-toko-material-toko-furnitur\\public\\index.php')
+WARNING - 2023-12-18 09:40:29 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$auth is deprecated in APPPATH\Controllers\Home.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Kuliah ITB\\Semester 5\\TST\\test material\\TST-toko-material-toko-furnitur\\public\\index.php')
+INFO - 2023-12-18 09:42:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 09:42:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 09:42:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 09:43:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-18 09:43:04 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /var/www/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /var/www/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'tsttokomaterial', 3314, '', 0)
+#1 /var/www/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/system/Database/BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 /var/www/system/Validation/StrictRules/Rules.php(225): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/system/Validation/Validation.php(327): CodeIgniter\Validation\StrictRules\Rules->is_unique('user9999', 'username', Array, NULL, 'username')
+#6 /var/www/system/Validation/Validation.php(199): CodeIgniter\Validation\Validation->processRules('username', 'username', 'user9999', Array, Array)
+#7 /var/www/system/Controller.php(152): CodeIgniter\Validation\Validation->run()
+#8 /var/www/app/ThirdParty/myth-auth/src/Controllers/AuthController.php(197): CodeIgniter\Controller->validate(Array)
+#9 /var/www/system/CodeIgniter.php(942): Myth\Auth\Controllers\AuthController->attemptRegister()
+#10 /var/www/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#11 /var/www/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /var/www/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /var/www/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /var/www/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/system/Database/BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 /var/www/system/Validation/StrictRules/Rules.php(225): CodeIgniter\Database\BaseBuilder->get()
+#4 /var/www/system/Validation/Validation.php(327): CodeIgniter\Validation\StrictRules\Rules->is_unique('user9999', 'username', Array, NULL, 'username')
+#5 /var/www/system/Validation/Validation.php(199): CodeIgniter\Validation\Validation->processRules('username', 'username', 'user9999', Array, Array)
+#6 /var/www/system/Controller.php(152): CodeIgniter\Validation\Validation->run()
+#7 /var/www/app/ThirdParty/myth-auth/src/Controllers/AuthController.php(197): CodeIgniter\Controller->validate(Array)
+#8 /var/www/system/CodeIgniter.php(942): Myth\Auth\Controllers\AuthController->attemptRegister()
+#9 /var/www/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#10 /var/www/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /var/www/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-12-18 09:43:04 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH/Validation/StrictRules/Rules.php(225): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/Validation/Validation.php(327): CodeIgniter\Validation\StrictRules\Rules->is_unique('user9999', 'username', [...], null, 'username')
+ 5 SYSTEMPATH/Validation/Validation.php(199): CodeIgniter\Validation\Validation->processRules('username', 'username', 'user9999', [...], [...])
+ 6 SYSTEMPATH/Controller.php(152): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH/ThirdParty/myth-auth/src/Controllers/AuthController.php(197): CodeIgniter\Controller->validate([...])
+ 8 SYSTEMPATH/CodeIgniter.php(942): Myth\Auth\Controllers\AuthController->attemptRegister()
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-18 09:43:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-18 09:43:28 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'172.18.0.2' (using password: NO) in /var/www/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /var/www/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('material_db', 'root', Object(SensitiveParameterValue), 'tsttokomaterial', 3306, '', 0)
+#1 /var/www/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/system/Database/BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 /var/www/system/Validation/StrictRules/Rules.php(225): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/system/Validation/Validation.php(327): CodeIgniter\Validation\StrictRules\Rules->is_unique('user9999', 'username', Array, NULL, 'username')
+#6 /var/www/system/Validation/Validation.php(199): CodeIgniter\Validation\Validation->processRules('username', 'username', 'user9999', Array, Array)
+#7 /var/www/system/Controller.php(152): CodeIgniter\Validation\Validation->run()
+#8 /var/www/app/ThirdParty/myth-auth/src/Controllers/AuthController.php(197): CodeIgniter\Controller->validate(Array)
+#9 /var/www/system/CodeIgniter.php(942): Myth\Auth\Controllers\AuthController->attemptRegister()
+#10 /var/www/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#11 /var/www/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /var/www/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'172.18.0.2' (using password: NO) in /var/www/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /var/www/system/Database/BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/system/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/system/Database/BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 /var/www/system/Validation/StrictRules/Rules.php(225): CodeIgniter\Database\BaseBuilder->get()
+#4 /var/www/system/Validation/Validation.php(327): CodeIgniter\Validation\StrictRules\Rules->is_unique('user9999', 'username', Array, NULL, 'username')
+#5 /var/www/system/Validation/Validation.php(199): CodeIgniter\Validation\Validation->processRules('username', 'username', 'user9999', Array, Array)
+#6 /var/www/system/Controller.php(152): CodeIgniter\Validation\Validation->run()
+#7 /var/www/app/ThirdParty/myth-auth/src/Controllers/AuthController.php(197): CodeIgniter\Controller->validate(Array)
+#8 /var/www/system/CodeIgniter.php(942): Myth\Auth\Controllers\AuthController->attemptRegister()
+#9 /var/www/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#10 /var/www/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /var/www/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-12-18 09:43:28 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'172.18.0.2' (using password: NO)
+in SYSTEMPATH/Database/BaseConnection.php on line 428.
+ 1 SYSTEMPATH/Database/BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH/Validation/StrictRules/Rules.php(225): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/Validation/Validation.php(327): CodeIgniter\Validation\StrictRules\Rules->is_unique('user9999', 'username', [...], null, 'username')
+ 5 SYSTEMPATH/Validation/Validation.php(199): CodeIgniter\Validation\Validation->processRules('username', 'username', 'user9999', [...], [...])
+ 6 SYSTEMPATH/Controller.php(152): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH/ThirdParty/myth-auth/src/Controllers/AuthController.php(197): CodeIgniter\Controller->validate([...])
+ 8 SYSTEMPATH/CodeIgniter.php(942): Myth\Auth\Controllers\AuthController->attemptRegister()
+ 9 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+10 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-18 09:43:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-18 09:43:39 --> mysqli_sql_exception: Table 'tsttokomaterial.users' doesn't exist in /var/www/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /var/www/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 /var/www/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 /var/www/system/Database/BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 /var/www/system/Database/BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 /var/www/system/Validation/StrictRules/Rules.php(225): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/system/Validation/Validation.php(327): CodeIgniter\Validation\StrictRules\Rules->is_unique('user9999', 'username', Array, NULL, 'username')
+#6 /var/www/system/Validation/Validation.php(199): CodeIgniter\Validation\Validation->processRules('username', 'username', 'user9999', Array, Array)
+#7 /var/www/system/Controller.php(152): CodeIgniter\Validation\Validation->run()
+#8 /var/www/app/ThirdParty/myth-auth/src/Controllers/AuthController.php(197): CodeIgniter\Controller->validate(Array)
+#9 /var/www/system/CodeIgniter.php(942): Myth\Auth\Controllers\AuthController->attemptRegister()
+#10 /var/www/system/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#11 /var/www/system/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /var/www/public/index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-12-18 09:43:40 --> Table 'tsttokomaterial.users' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 647.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `users`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH/Validation/StrictRules/Rules.php(225): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/Validation/Validation.php(327): CodeIgniter\Validation\StrictRules\Rules->is_unique('user9999', 'username', [...], null, 'username')
+ 4 SYSTEMPATH/Validation/Validation.php(199): CodeIgniter\Validation\Validation->processRules('username', 'username', 'user9999', [...], [...])
+ 5 SYSTEMPATH/Controller.php(152): CodeIgniter\Validation\Validation->run()
+ 6 APPPATH/ThirdParty/myth-auth/src/Controllers/AuthController.php(197): CodeIgniter\Controller->validate([...])
+ 7 SYSTEMPATH/CodeIgniter.php(942): Myth\Auth\Controllers\AuthController->attemptRegister()
+ 8 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+ 9 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-18 09:44:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 09:45:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 09:45:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 09:46:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 09:46:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-12-18 09:46:18 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$session is deprecated in APPPATH/Controllers/Home.php on line 10.
+ 1 SYSTEMPATH/CodeIgniter.php(914): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-12-18 09:46:18 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$auth is deprecated in APPPATH/Controllers/Home.php on line 11.
+ 1 SYSTEMPATH/CodeIgniter.php(914): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-18 09:46:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-12-18 09:46:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\PenilaianPerusahaan::$session is deprecated in APPPATH/Controllers/PenilaianPerusahaan.php on line 16.
+ 1 SYSTEMPATH/CodeIgniter.php(914): App\Controllers\PenilaianPerusahaan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-12-18 09:46:26 --> [DEPRECATED] Creation of dynamic property App\Controllers\PenilaianPerusahaan::$auth is deprecated in APPPATH/Controllers/PenilaianPerusahaan.php on line 17.
+ 1 SYSTEMPATH/CodeIgniter.php(914): App\Controllers\PenilaianPerusahaan->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-18 09:46:26 --> Undefined variable $row
+in APPPATH/Views/PenilaianPerusahaan/index.php on line 164.
+ 1 APPPATH/Views/PenilaianPerusahaan/index.php(164): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', '/var/www/app/Views/PenilaianPerusahaan/index.php', 164)
+ 2 SYSTEMPATH/View/View.php(228): include('/var/www/app/Views/PenilaianPerusahaan/index.php')
+ 3 SYSTEMPATH/View/View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1190): CodeIgniter\View\View->render('PenilaianPerusahaan/index', [], true)
+ 5 APPPATH/Controllers/PenilaianPerusahaan.php(38): view('PenilaianPerusahaan/index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(942): App\Controllers\PenilaianPerusahaan->index()
+ 7 SYSTEMPATH/CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PenilaianPerusahaan))
+ 8 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-18 09:46:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-12-18 09:46:45 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$session is deprecated in APPPATH/Controllers/Home.php on line 10.
+ 1 SYSTEMPATH/CodeIgniter.php(914): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-12-18 09:46:45 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$auth is deprecated in APPPATH/Controllers/Home.php on line 11.
+ 1 SYSTEMPATH/CodeIgniter.php(914): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-18 10:50:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 10:50:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 10:51:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 10:51:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 10:51:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 10:51:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 10:51:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 10:51:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 10:51:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-12-18 10:51:50 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$session is deprecated in APPPATH\Controllers\Home.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Kuliah ITB\\Semester 5\\TST\\test material\\TST-toko-material-toko-furnitur\\public\\index.php')
+WARNING - 2023-12-18 10:51:50 --> [DEPRECATED] Creation of dynamic property App\Controllers\Home::$auth is deprecated in APPPATH\Controllers\Home.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Home->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Kuliah ITB\\Semester 5\\TST\\test material\\TST-toko-material-toko-furnitur\\public\\index.php')
+INFO - 2023-12-18 10:51:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 10:52:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 10:53:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 10:53:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 10:53:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 10:54:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-18 10:56:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
