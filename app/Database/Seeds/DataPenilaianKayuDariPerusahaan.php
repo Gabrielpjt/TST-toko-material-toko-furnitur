@@ -19,28 +19,28 @@ class DataPenilaianKayuDariPerusahaan extends Seeder
         $kekurangan = ['Rentan terhadap rayap', 'Tidak tahan terhadap air', 'Membutuhkan perawatan khusus', 'Rentan terhadap jamur', 'Rentan terhadap perubahan cuaca', 'Mudah terbakar', 'Tidak tahan terhadap sinar UV', 'Rentan terhadap serangan hama', 'Rentan terhadap penyusutan'];
 
         $data = [];
-        $temp = [];
-        foreach($jenis_kayu as $kayu){
-            foreach($merek_kayu as $merek){
-                $random_tipe_finishing = $tipe_finishing_warna[array_rand($tipe_finishing_warna)];
-                $random_kelebihan = $kelebihan[array_rand($kelebihan)];
-                $random_kekurangan = $kekurangan[array_rand($kekurangan)];
-                $toInsert = [
-                    'Jenis_Kayu' => $kayu,
-                    'Merek_Kayu' => $merek,
-                    'Tingkat_Tekstur' => mt_rand(1, 10),
-                    'Tingkat_Ketahanan' => mt_rand(1, 10),
-                    'Tingkat_Keperawatan' => mt_rand(1, 10),
-                    'Harga' => round(mt_rand(1000, 10000) + mt_rand() / mt_getrandmax(), 2),
-                    'Massa_Jenis' => round(mt_rand(1000, 10000) + mt_rand() / mt_getrandmax(), 2),
-                    'Tipe_Finishing_Warna' => $random_tipe_finishing,
-                    'Kelebihan' => $random_kelebihan,
-                    'Kekurangan' => $random_kekurangan
-                ];
-                    array_push($temp, $toInsert);
-            }
-        }
-        $this->db->table('data_penilaian_kayu_dari_perusahaan')->insertBatch($temp);
+        // $temp = [];
+        // foreach($jenis_kayu as $kayu){
+        //     foreach($merek_kayu as $merek){
+        //         $random_tipe_finishing = $tipe_finishing_warna[array_rand($tipe_finishing_warna)];
+        //         $random_kelebihan = $kelebihan[array_rand($kelebihan)];
+        //         $random_kekurangan = $kekurangan[array_rand($kekurangan)];
+        //         $toInsert = [
+        //             'Jenis_Kayu' => $kayu,
+        //             'Merek_Kayu' => $merek,
+        //             'Tingkat_Tekstur' => mt_rand(1, 10),
+        //             'Tingkat_Ketahanan' => mt_rand(1, 10),
+        //             'Tingkat_Keperawatan' => mt_rand(1, 10),
+        //             'Harga' => round(mt_rand(1000, 10000) + mt_rand() / mt_getrandmax(), 2),
+        //             'Massa_Jenis' => round(mt_rand(1000, 10000) + mt_rand() / mt_getrandmax(), 2),
+        //             'Tipe_Finishing_Warna' => $random_tipe_finishing,
+        //             'Kelebihan' => $random_kelebihan,
+        //             'Kekurangan' => $random_kekurangan
+        //         ];
+        //             array_push($temp, $toInsert);
+        //     }
+        // }
+        // $this->db->table('data_penilaian_kayu_dari_perusahaan')->insertBatch($temp);
 
 
         for ($i = 0; $i < 100; $i++) {
