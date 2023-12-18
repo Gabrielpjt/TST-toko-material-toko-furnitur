@@ -36,16 +36,22 @@ class PenilaianPelanggan extends BaseController
 
     public function save()
     {
-
-        $this->model->save([
-            'jenis_kayu' => $this->request->getPost('jenis_kayu'),
-            'merek_kayu' => $this->request->getPost('merek_kayu'),
-            'review' => $this->request->getPost('review'),
-            'tekstur' => $this->request->getPost('tekstur'),
-            'ketahanan' => $this->request->getPost('ketahanan'),
-            'keperawatan' => $this->request->getPost('keperawatan')
-        ]);
-        return response('success', 200);
+        $JSONstring = $this->request->getBody();
+        $data = json_decode($JSONstring, true);
+        $logger = service('logger');
+        if (count($data) == 6){
+            $this->model->save([
+                'jenis_kayu' => $data['jenis_kayu'],
+                'merek_kayu' => $data['merek_kayu'],
+                'review' => $data['review'],
+                'tekstur' => $data['tekstur'],
+                'ketahanan' => $data['ketahanan'],
+                'keperawatan' => $data['keperawatan']
+            ]);
+        } else if (count($data) > 1) {
+            $this->model->insertBatch($data);
+        }
+        return $this->response->setJSON(['status' => 'success', 'message' => 'Data Telah Disimpan']);
     }
 
     public function detail($id)
