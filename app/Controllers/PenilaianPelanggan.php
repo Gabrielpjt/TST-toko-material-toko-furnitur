@@ -36,9 +36,11 @@ class PenilaianPelanggan extends BaseController
 
     public function save()
     {
+
         $this->model->save([
             'jenis_kayu' => $this->request->getPost('jenis_kayu'),
             'merek_kayu' => $this->request->getPost('merek_kayu'),
+            'review' => $this->request->getPost('review'),
             'tekstur' => $this->request->getPost('tekstur'),
             'ketahanan' => $this->request->getPost('ketahanan'),
             'keperawatan' => $this->request->getPost('keperawatan')

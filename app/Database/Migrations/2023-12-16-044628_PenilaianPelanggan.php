@@ -23,6 +23,10 @@ class PenilaianPelanggan extends Migration
                 'type'           => 'VARCHAR',
                 'constraint'     => '255',
             ],
+            'review' => [
+                'type'            => 'INT',
+                'unsigned'       => true,
+            ],
             'tekstur' => [
                 'type'            => 'INT',
                 'unsigned'       => true,
