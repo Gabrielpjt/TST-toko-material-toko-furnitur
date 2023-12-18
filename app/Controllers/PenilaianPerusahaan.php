@@ -1,21 +1,22 @@
 <?php
 
-namespace App\Controllers; 
+namespace App\Controllers;
 
-use App\Controllers\BaseController; 
+use App\Controllers\BaseController;
 use App\Models\M_PenilaianPerusahaan;
 
-class PenilaianPerusahaan extends BaseController 
-{   
+class PenilaianPerusahaan extends BaseController
+{
     protected $model; // Perbaiki konvensi penamaan variabel
-    
-    public function __construct(){
+
+    public function __construct()
+    {
         $this->model = new M_PenilaianPerusahaan();
         helper('en');
         $this->session = service('session');
         $this->auth   = service('authentication');
     }
-    
+
     public function index()
     {
 
@@ -27,17 +28,14 @@ class PenilaianPerusahaan extends BaseController
                 ->to($redirectURL);
         }
 
-        $data = [ 
+        $data = [
             'judul' => 'Data Penilaian Perusahaan',
             'penilaianperusahaan' => $this->model->getAllData()
         ];
-        
+
         // Menggunakan view() dengan array dalam single method call
-        return view('template/v_header', $data) .
-        view('template/v_sidebar') .
-        view('template/v_topbar') .
-        view('PenilaianPerusahaan/index') .
-        view('template/v_footer');
+        return
+            view('PenilaianPerusahaan/index', $data);
     }
 
     public function tambah()
@@ -100,7 +98,8 @@ class PenilaianPerusahaan extends BaseController
         }
     }
 
-    public function hapus($id) {
+    public function hapus($id)
+    {
 
         if (!$this->auth->check()) {
             $redirectURL = session('redirect_url') ?? site_url($this->config->landingRoute);
@@ -118,5 +117,4 @@ class PenilaianPerusahaan extends BaseController
         }
         return redirect()->to(base_url('PenilaianPerusahaan'));
     }
-    
 }

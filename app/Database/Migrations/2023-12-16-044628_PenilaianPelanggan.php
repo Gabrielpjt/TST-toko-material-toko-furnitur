@@ -23,10 +23,6 @@ class PenilaianPelanggan extends Migration
                 'type'           => 'VARCHAR',
                 'constraint'     => '255',
             ],
-            'penilaian_keseluruhan' => [
-                'type'            => 'INT',
-                'unsigned'       => true,
-            ],
             'tekstur' => [
                 'type'            => 'INT',
                 'unsigned'       => true,
@@ -38,14 +34,6 @@ class PenilaianPelanggan extends Migration
             'keperawatan' => [
                 'type'            => 'INT',
                 'unsigned'       => true,
-            ],
-            'kelebihan' => [
-                'type'            => 'VARCHAR',
-                'constraint'      => '255'
-            ],
-            'kekurangan' => [
-                'type'            => 'VARCHAR',
-                'constraint'      => '255'
             ],
         ]);
         $this->forge->addKey('id', true);
