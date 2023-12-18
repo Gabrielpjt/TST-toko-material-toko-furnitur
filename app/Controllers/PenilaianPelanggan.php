@@ -45,8 +45,7 @@ class PenilaianPelanggan extends BaseController
             'ketahanan' => $this->request->getPost('ketahanan'),
             'keperawatan' => $this->request->getPost('keperawatan')
         ]);
-        session()->setFlashdata('pesan', 'Data berhasil ditambahkan.');
-        return redirect()->to('/PenilaianPelanggan');
+        return response('success', 200);
     }
 
     public function detail($id)
