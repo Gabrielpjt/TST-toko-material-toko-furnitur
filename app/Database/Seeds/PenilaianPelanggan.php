@@ -8,8 +8,8 @@ class PenilaianPelanggan extends Seeder
 {
     public function run()
     {
-        $query = "ALTER TABLE penilaian_pelanggan AUTO_INCREMENT = 1";
-        $this->db->query($query);
+        // Reset AUTO_INCREMENT pada tabel
+        $this->db->query("ALTER TABLE penilaian_pelanggan AUTO_INCREMENT = 1");
 
         $jenis_kayu = ['oak', 'maple', 'ash', 'teak', 'birch', 'cedar', 'mahogany', 'pine', 'cherry', 'walnut'];
         $merek_kayu = ['Bridgestone', 'Ping', 'Mizuno', 'Wilson', 'Srixon', 'Callaway', 'Cobra', 'Adams', 'TaylorMade', 'Titleist'];
@@ -27,14 +27,9 @@ class PenilaianPelanggan extends Seeder
                 'ketahanan' => mt_rand(1, 10),
                 'keperawatan' => mt_rand(1, 10),
             ];
-
-            foreach ($data as $key => $value) {
-                $this->db->table('penilaian_pelanggan')->insert($value);
-            }
         }
-        
-    }
-            
-        
-}
 
+        // Insert semua data sekaligus setelah perulangan selesai
+        $this->db->table('penilaian_pelanggan')->insertBatch($data);
+    }
+}

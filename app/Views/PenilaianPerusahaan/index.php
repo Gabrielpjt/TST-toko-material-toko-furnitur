@@ -1,19 +1,16 @@
-<?= $this->extend('template/v_template'); ?>
-
-<?= $this->section('content') ?>
 <!-- Begin Page Content -->
 <div class="container-fluid">
     <h1 class="h3 mb-4 text-gray-800"><?= $judul ?></h1>
 
-    <?php if (session()->get('message')) : ?>
+    <?php if(session()->get('message')) : ?>
         <div class="alert alert-success alert-dismissible fade show" role="alert">
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
             </button>
-            Data Penilaian berhasil <strong><?= session()->getFlashdata('message'); ?></strong>
+            Data Penilaian berhasil <strong><?= session()->getFlashdata('message'); ?></strong> 
         </div>
         <script>
-            $(document).ready(function() {
+            $(document).ready(function(){
                 $(".alert").alert();
             });
         </script>
@@ -21,7 +18,7 @@
 
     <div class="row">
         <div class="col-md-6">
-            <?php
+            <?php 
             $errors = session()->get('err');
             if (!empty($errors) && is_array($errors)) {
                 echo "<div class='alert alert-danger' role='alert'>";
@@ -147,7 +144,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="submit" name="tambah" class="btn btn-primary">Tambah Data</button>
+                    <button type="submit" name= "tambah" class="btn btn-primary">Tambah Data</button>
                 </div>
             </form>
         </div>
@@ -169,17 +166,19 @@
         </div>
     </div>
 </div>
+</div>
+
 
 <script>
-    $(document).ready(function() {
+    $(document).ready(function(){
         // Menangani saat tombol hapus diklik
         $('.btn-delete').click(function() {
             // Mengambil ID yang terkait dari tombol hapus yang diklik
             var id = $(this).closest('tr').find('td:first').text();
-
+            
             // Mengatur URL hapus sesuai dengan ID yang dipilih
             var deleteUrl = '/PenilaianPerusahaan/hapus/' + id;
-
+            
             // Mengatur href pada tombol konfirmasi hapus dengan URL yang tepat
             $('#modalHapus .btn-primary').attr('href', deleteUrl);
         });
@@ -192,4 +191,6 @@
 <!-- Sebelum tag penutup </body> -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
-<?= $this->endSection() ?>
+
+
+
