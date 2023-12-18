@@ -15,3 +15,5 @@ writable/uploads/*
 
 writable/debugbar/*
 !writable/debugbar/.gitkeep
+
+.env
