@@ -49,3 +49,4 @@ php spark serve
 ```
 
 9. Sistem dapat diakses pada http://localhost:8080
+10. Lanjutkan proses run program sistem [Toko Furnitur](https://github.com/rasyadanfz/furniture-system)
