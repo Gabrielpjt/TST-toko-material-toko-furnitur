@@ -2,10 +2,6 @@
 
 ## How to Run
 
-# Sistem Toko Furnitur (WoodWonders)
-
-## How to Run
-
 1. Clone Github Ini
 
 ```
