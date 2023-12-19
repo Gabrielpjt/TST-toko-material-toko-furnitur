@@ -1095,3 +1095,156 @@ Stack trace:
 #11 C:\Users\GABRIEL PANJAITAN\Downloads\Tst-tubes\TST-toko-material-toko-furnitur\system\CLI\Console.php(46): CodeIgniter\CLI\Commands->run('db:seed', Array)
 #12 C:\Users\GABRIEL PANJAITAN\Downloads\Tst-tubes\TST-toko-material-toko-furnitur\spark(102): CodeIgniter\CLI\Console->run()
 #13 {main}
+DEBUG - 2023-12-18 23:54:52 --> Array
+(
+    [tingkatTekstur] => 6
+    [tingkatKeperawatan] => 6
+    [tingkatKetahanan] => 7
+)
+
+ERROR - 2023-12-18 23:54:56 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Kuliah ITB\Semester 5\TST\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\Kuliah ITB\Semester 5\TST\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'tsttokomaterial', 3308, '', 0)
+#1 C:\Kuliah ITB\Semester 5\TST\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Kuliah ITB\Semester 5\TST\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Kuliah ITB\Semester 5\TST\TST-toko-material-toko-furnitur\system\Database\BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Kuliah ITB\Semester 5\TST\TST-toko-material-toko-furnitur\app\Models\M_PenilaianPerusahaan.php(39): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Kuliah ITB\Semester 5\TST\TST-toko-material-toko-furnitur\app\Controllers\Api\Rekomendasi_API.php(43): App\Models\M_PenilaianPerusahaan->cariRekomendasikan('6', '6', '7')
+#6 C:\Kuliah ITB\Semester 5\TST\TST-toko-material-toko-furnitur\system\CodeIgniter.php(942): App\Controllers\Api\Rekomendasi_API->cariRekomendasi()
+#7 C:\Kuliah ITB\Semester 5\TST\TST-toko-material-toko-furnitur\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Rekomendasi_API))
+#8 C:\Kuliah ITB\Semester 5\TST\TST-toko-material-toko-furnitur\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Kuliah ITB\Semester 5\TST\TST-toko-material-toko-furnitur\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\Kuliah ITB\Semester 5\TST\TST-toko-material-toko-furnitur\system\Commands\Server\rewrite.php(47): require_once('C:\\Kuliah ITB\\S...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Kuliah ITB\Semester 5\TST\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\Kuliah ITB\Semester 5\TST\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Kuliah ITB\Semester 5\TST\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Kuliah ITB\Semester 5\TST\TST-toko-material-toko-furnitur\system\Database\BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Kuliah ITB\Semester 5\TST\TST-toko-material-toko-furnitur\app\Models\M_PenilaianPerusahaan.php(39): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Kuliah ITB\Semester 5\TST\TST-toko-material-toko-furnitur\app\Controllers\Api\Rekomendasi_API.php(43): App\Models\M_PenilaianPerusahaan->cariRekomendasikan('6', '6', '7')
+#5 C:\Kuliah ITB\Semester 5\TST\TST-toko-material-toko-furnitur\system\CodeIgniter.php(942): App\Controllers\Api\Rekomendasi_API->cariRekomendasi()
+#6 C:\Kuliah ITB\Semester 5\TST\TST-toko-material-toko-furnitur\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Rekomendasi_API))
+#7 C:\Kuliah ITB\Semester 5\TST\TST-toko-material-toko-furnitur\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Kuliah ITB\Semester 5\TST\TST-toko-material-toko-furnitur\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\Kuliah ITB\Semester 5\TST\TST-toko-material-toko-furnitur\system\Commands\Server\rewrite.php(47): require_once('C:\\Kuliah ITB\\S...')
+#10 {main}
+CRITICAL - 2023-12-18 23:54:56 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `data_penilaian_kayu_dari_perusahaan`
+WHERE `Tingkat_Tekstur` >= :Tingkat_Tekstur:
+AND `Tingkat_Keperawatan` >= :Tingkat_Keperawatan:
+AND `Tingkat_Ketahanan` >= :Tingkat_Ketahanan:', [...], false)
+ 3 APPPATH\Models\M_PenilaianPerusahaan.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Api\Rekomendasi_API.php(43): App\Models\M_PenilaianPerusahaan->cariRekomendasikan('6', '6', '7')
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Api\Rekomendasi_API->cariRekomendasi()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Rekomendasi_API))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Kuliah ITB\\Semester 5\\TST\\TST-toko-material-toko-furnitur\\public\\index.php')
+DEBUG - 2023-12-18 23:58:21 --> Array
+(
+    [tingkatTekstur] => 6
+    [tingkatKeperawatan] => 6
+    [tingkatKetahanan] => 7
+)
+
+ERROR - 2023-12-18 23:58:25 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Kuliah ITB\Semester 5\TST\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\Kuliah ITB\Semester 5\TST\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'tsttokomaterial', 3308, '', 0)
+#1 C:\Kuliah ITB\Semester 5\TST\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Kuliah ITB\Semester 5\TST\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Kuliah ITB\Semester 5\TST\TST-toko-material-toko-furnitur\system\Database\BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Kuliah ITB\Semester 5\TST\TST-toko-material-toko-furnitur\app\Models\M_PenilaianPerusahaan.php(39): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Kuliah ITB\Semester 5\TST\TST-toko-material-toko-furnitur\app\Controllers\Api\Rekomendasi_API.php(43): App\Models\M_PenilaianPerusahaan->cariRekomendasikan('6', '6', '7')
+#6 C:\Kuliah ITB\Semester 5\TST\TST-toko-material-toko-furnitur\system\CodeIgniter.php(942): App\Controllers\Api\Rekomendasi_API->cariRekomendasi()
+#7 C:\Kuliah ITB\Semester 5\TST\TST-toko-material-toko-furnitur\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Rekomendasi_API))
+#8 C:\Kuliah ITB\Semester 5\TST\TST-toko-material-toko-furnitur\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Kuliah ITB\Semester 5\TST\TST-toko-material-toko-furnitur\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\Kuliah ITB\Semester 5\TST\TST-toko-material-toko-furnitur\system\Commands\Server\rewrite.php(47): require_once('C:\\Kuliah ITB\\S...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Kuliah ITB\Semester 5\TST\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\Kuliah ITB\Semester 5\TST\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Kuliah ITB\Semester 5\TST\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Kuliah ITB\Semester 5\TST\TST-toko-material-toko-furnitur\system\Database\BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Kuliah ITB\Semester 5\TST\TST-toko-material-toko-furnitur\app\Models\M_PenilaianPerusahaan.php(39): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Kuliah ITB\Semester 5\TST\TST-toko-material-toko-furnitur\app\Controllers\Api\Rekomendasi_API.php(43): App\Models\M_PenilaianPerusahaan->cariRekomendasikan('6', '6', '7')
+#5 C:\Kuliah ITB\Semester 5\TST\TST-toko-material-toko-furnitur\system\CodeIgniter.php(942): App\Controllers\Api\Rekomendasi_API->cariRekomendasi()
+#6 C:\Kuliah ITB\Semester 5\TST\TST-toko-material-toko-furnitur\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Rekomendasi_API))
+#7 C:\Kuliah ITB\Semester 5\TST\TST-toko-material-toko-furnitur\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Kuliah ITB\Semester 5\TST\TST-toko-material-toko-furnitur\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\Kuliah ITB\Semester 5\TST\TST-toko-material-toko-furnitur\system\Commands\Server\rewrite.php(47): require_once('C:\\Kuliah ITB\\S...')
+#10 {main}
+CRITICAL - 2023-12-18 23:58:25 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `data_penilaian_kayu_dari_perusahaan`
+WHERE `Tingkat_Tekstur` >= :Tingkat_Tekstur:
+AND `Tingkat_Keperawatan` >= :Tingkat_Keperawatan:
+AND `Tingkat_Ketahanan` >= :Tingkat_Ketahanan:', [...], false)
+ 3 APPPATH\Models\M_PenilaianPerusahaan.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Api\Rekomendasi_API.php(43): App\Models\M_PenilaianPerusahaan->cariRekomendasikan('6', '6', '7')
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Api\Rekomendasi_API->cariRekomendasi()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Rekomendasi_API))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Kuliah ITB\\Semester 5\\TST\\TST-toko-material-toko-furnitur\\public\\index.php')
+DEBUG - 2023-12-18 23:58:39 --> Array
+(
+    [tingkatTekstur] => 6
+    [tingkatKeperawatan] => 6
+    [tingkatKetahanan] => 7
+)
+
+ERROR - 2023-12-18 23:58:43 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Kuliah ITB\Semester 5\TST\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\Kuliah ITB\Semester 5\TST\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'tsttokomaterial', 3308, '', 0)
+#1 C:\Kuliah ITB\Semester 5\TST\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Kuliah ITB\Semester 5\TST\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Kuliah ITB\Semester 5\TST\TST-toko-material-toko-furnitur\system\Database\BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Kuliah ITB\Semester 5\TST\TST-toko-material-toko-furnitur\app\Models\M_PenilaianPerusahaan.php(39): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Kuliah ITB\Semester 5\TST\TST-toko-material-toko-furnitur\app\Controllers\Api\Rekomendasi_API.php(43): App\Models\M_PenilaianPerusahaan->cariRekomendasikan('6', '6', '7')
+#6 C:\Kuliah ITB\Semester 5\TST\TST-toko-material-toko-furnitur\system\CodeIgniter.php(942): App\Controllers\Api\Rekomendasi_API->cariRekomendasi()
+#7 C:\Kuliah ITB\Semester 5\TST\TST-toko-material-toko-furnitur\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Rekomendasi_API))
+#8 C:\Kuliah ITB\Semester 5\TST\TST-toko-material-toko-furnitur\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Kuliah ITB\Semester 5\TST\TST-toko-material-toko-furnitur\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\Kuliah ITB\Semester 5\TST\TST-toko-material-toko-furnitur\system\Commands\Server\rewrite.php(47): require_once('C:\\Kuliah ITB\\S...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Kuliah ITB\Semester 5\TST\TST-toko-material-toko-furnitur\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\Kuliah ITB\Semester 5\TST\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Kuliah ITB\Semester 5\TST\TST-toko-material-toko-furnitur\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Kuliah ITB\Semester 5\TST\TST-toko-material-toko-furnitur\system\Database\BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Kuliah ITB\Semester 5\TST\TST-toko-material-toko-furnitur\app\Models\M_PenilaianPerusahaan.php(39): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Kuliah ITB\Semester 5\TST\TST-toko-material-toko-furnitur\app\Controllers\Api\Rekomendasi_API.php(43): App\Models\M_PenilaianPerusahaan->cariRekomendasikan('6', '6', '7')
+#5 C:\Kuliah ITB\Semester 5\TST\TST-toko-material-toko-furnitur\system\CodeIgniter.php(942): App\Controllers\Api\Rekomendasi_API->cariRekomendasi()
+#6 C:\Kuliah ITB\Semester 5\TST\TST-toko-material-toko-furnitur\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Rekomendasi_API))
+#7 C:\Kuliah ITB\Semester 5\TST\TST-toko-material-toko-furnitur\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Kuliah ITB\Semester 5\TST\TST-toko-material-toko-furnitur\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\Kuliah ITB\Semester 5\TST\TST-toko-material-toko-furnitur\system\Commands\Server\rewrite.php(47): require_once('C:\\Kuliah ITB\\S...')
+#10 {main}
+CRITICAL - 2023-12-18 23:58:43 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1612): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `data_penilaian_kayu_dari_perusahaan`
+WHERE `Tingkat_Tekstur` >= :Tingkat_Tekstur:
+AND `Tingkat_Keperawatan` >= :Tingkat_Keperawatan:
+AND `Tingkat_Ketahanan` >= :Tingkat_Ketahanan:', [...], false)
+ 3 APPPATH\Models\M_PenilaianPerusahaan.php(39): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Api\Rekomendasi_API.php(43): App\Models\M_PenilaianPerusahaan->cariRekomendasikan('6', '6', '7')
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Api\Rekomendasi_API->cariRekomendasi()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Rekomendasi_API))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Kuliah ITB\\Semester 5\\TST\\TST-toko-material-toko-furnitur\\public\\index.php')
