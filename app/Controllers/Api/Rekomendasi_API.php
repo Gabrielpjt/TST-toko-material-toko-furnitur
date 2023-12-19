@@ -29,14 +29,16 @@ class Rekomendasi_API extends BaseController
 
     public function cariRekomendasi()
     {
-        // Mengambil data dari body request
         $requestBody = $this->request->getBody();
         $data = json_decode($requestBody, true);
-
+        // Autentikasi
+        $username = $data['username'];
+        $password = $data['password'];
+        if ($username == env('API_USERNAME') && $password == env('API_PASSWORD')) {
         // Mengambil data dari body request untuk pencarian rekomendasi
-        $tingkatTekstur = $data["tingkatTekstur"];
-        $tingkatKeperawatan = $data["tingkatKeperawatan"];
-        $tingkatKetahanan = $data["tingkatKetahanan"];
+        $tingkatTekstur = $data[0]["tingkatTekstur"];
+        $tingkatKeperawatan = $data[0]["tingkatKeperawatan"];
+        $tingkatKetahanan = $data[0]["tingkatKetahanan"];
 
         // Melakukan pencarian berdasarkan kriteria yang diberikan
         $hasilPencarian = $this->model->cariRekomendasikan($tingkatTekstur, $tingkatKeperawatan, $tingkatKetahanan);
@@ -46,5 +48,11 @@ class Rekomendasi_API extends BaseController
             'message' => 'Success',
             'data' => $hasilPencarian
         ]);
+        } else {
+            return $this->response->setJSON([
+                'status' => false,
+                'message' => 'Unauthorized access'
+            ]);
+        }
     }
 }
